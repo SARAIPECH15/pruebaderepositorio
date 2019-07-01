@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="administrador.master.cs" Inherits="ProyectoWebPageMaster.MasterPage.administrador" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+
+    <link href="../recursos/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="../recursos/./css2/main.css">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+     <!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				company <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="../recursos/./assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
+					<figcaption class="text-center text-titles">User Name</figcaption>
+				</figure>
+				<ul class="full-box list-unstyled text-center">
+					<li>
+						<a href="my-data.html" title="Mis datos">
+							<i class="zmdi zmdi-account-circle"></i>
+						</a>
+					</li>
+					<li>
+						<a href="my-account.html" title="Mi cuenta">
+							<i class="zmdi zmdi-settings"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#!" title="Salir del sistema" class="btn-exit-system">
+							<i class="zmdi zmdi-power"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Usuarios
+					</a>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Historias <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="company.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Genero</a>
+						</li>
+						<li>
+							<a href="category.html"><i class="zmdi zmdi-labels zmdi-hc-fw"></i> Categorias</a>
+						</li>
+						<li>
+							<a href="provider.html"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Status</a>
+						</li>
+						<li>
+							<a href="book.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Votaciones</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Administrar <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="admin.html"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Paises</a>
+						</li>
+						<li>
+							<a href="client.html"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Estados</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="catalog.html">
+						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Estadisticas
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				<li>
+					<a href="search.html" class="btn-search">
+						<i class="zmdi zmdi-search"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+
+
+
+
+
+        <!--====== Scripts -->
+	<script src="../recursos/./js2/jquery-3.1.1.min.js"></script>
+	<script src="../recursos/./js2/sweetalert2.min.js"></script>
+	<script src="../recursos/./js2/bootstrap.min.js"></script>
+	<script src="../recursos/./js2/material.min.js"></script>
+	<script src="../recursos/./js2/ripples.min.js"></script>
+	<script src="../recursos/./js2/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../recursos/./js2/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+
+
+    </form>
+</body>
+</html>
