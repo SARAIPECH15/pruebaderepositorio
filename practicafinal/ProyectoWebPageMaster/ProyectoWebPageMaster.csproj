@@ -93,6 +93,7 @@
     <Content Include="GUI\Novela_Historica.aspx" />
     <Content Include="GUI\Novela_Juvenil.aspx" />
     <Content Include="GUI\pais.aspx" />
+    <Content Include="GUI\paisABC.aspx" />
     <Content Include="GUI\Paranormal.aspx" />
     <Content Include="GUI\perfil.aspx" />
     <Content Include="GUI\Poesia.aspx" />
@@ -101,6 +102,7 @@
     <Content Include="GUI\servicios.aspx" />
     <Content Include="GUI\terminosycondiciones.aspx" />
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
+    <Content Include="GUI\tiposdeusuariosABCnew.aspx" />
     <Content Include="GUI\UsuariosABC.aspx" />
     <Content Include="img\paradrop.png" />
     <Content Include="img\undraw_posting_photo.svg" />
@@ -1995,12 +1997,14 @@
     <Compile Include="BO\estadosBO.cs" />
     <Compile Include="BO\GENERO_BO.cs" />
     <Compile Include="BO\pais_BO.cs" />
+    <Compile Include="BO\tipousuariosBO.cs" />
     <Compile Include="BO\UsuariosBO.cs" />
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\estadosDAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
     <Compile Include="DAO\PaisDAO.cs" />
+    <Compile Include="DAO\tipousuariosDAO.cs" />
     <Compile Include="DAO\UsuariosDAO.cs" />
     <Compile Include="GUI\abcclasificacion.aspx.cs">
       <DependentUpon>abcclasificacion.aspx</DependentUpon>
@@ -2170,6 +2174,13 @@
     <Compile Include="GUI\pais.aspx.designer.cs">
       <DependentUpon>pais.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\paisABC.aspx.cs">
+      <DependentUpon>paisABC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\paisABC.aspx.designer.cs">
+      <DependentUpon>paisABC.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Paranormal.aspx.cs">
       <DependentUpon>Paranormal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2225,6 +2236,13 @@
     </Compile>
     <Compile Include="GUI\tiposdeusuariosABC.aspx.designer.cs">
       <DependentUpon>tiposdeusuariosABC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\tiposdeusuariosABCnew.aspx.cs">
+      <DependentUpon>tiposdeusuariosABCnew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\tiposdeusuariosABCnew.aspx.designer.cs">
+      <DependentUpon>tiposdeusuariosABCnew.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\UsuariosABC.aspx.cs">
       <DependentUpon>UsuariosABC.aspx</DependentUpon>

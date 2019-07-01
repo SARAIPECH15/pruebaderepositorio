@@ -66,8 +66,8 @@
             <h6 class="collapse-header">Panel de usuarios:</h6>
             <a class="collapse-item" href="UsuariosABC.aspx">Usuarios</a>
             <a class="collapse-item" href="tiposdeusuariosABC.aspx">Tipos de usuarios</a>
-            <a class="collapse-item" href="cards.html">Paises</a>
-            <a class="collapse-item" href="cards.html">Estados</a>
+            <a class="collapse-item" href="paisABC.aspx">Paises</a>
+            <a class="collapse-item" href="tiposdeusuariosABCnew.aspx">Estados</a>
           </div>
         </div>
       </li>

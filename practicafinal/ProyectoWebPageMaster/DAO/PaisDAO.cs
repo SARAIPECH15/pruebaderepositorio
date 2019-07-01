@@ -25,7 +25,7 @@ namespace ProyectoWebPageMaster.DAO
         public int agregarusuario(pais_BO objusuario)
         {
             //inserta y devuelve el ultimo el id insertado
-            int id = objConectar.EjecutarComando("INSERT INTO PAIS (NOMBRE) values('" + objusuario.Nombre + "')");
+            int id = objConectar.EjecutarComando("INSERT INTO PAIS (NOMBRE) output INSERTED.COD_PAIS values('" + objusuario.Nombre + "')");
             return id;
 
         }
@@ -46,7 +46,7 @@ namespace ProyectoWebPageMaster.DAO
 
         public int modificarpais(pais_BO objusuario)
         {
-            int id = objConectar.EjecutarComando(string.Format("update PAIS set nombre='{0}' where COD_PAIS={1}", objusuario.Nombre, objusuario.Cod_pais));
+            int id = objConectar.EjecutarComando(string.Format("update PAIS set NOMBRE='{0}' where COD_PAIS={1}", objusuario.Nombre, objusuario.Cod_pais));
             return 1;
         }
 

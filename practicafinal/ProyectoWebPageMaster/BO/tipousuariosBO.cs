@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 using ProyectoWebPageMaster.DAO;
 
 namespace ProyectoWebPageMaster.BO
 {
-    public class pais_BO
+    public class tipousuariosBO
     {
 
-        private int cod_pais;
-        
+        private int id_tipousuario;
         private string nombre;
 
-        public int Cod_pais { get => cod_pais; set => cod_pais = value; }
-       
+        public int Id_tipousuario { get => id_tipousuario; set => id_tipousuario = value; }
         public string Nombre { get => nombre; set => nombre = value; }
+
+
     }
 }
