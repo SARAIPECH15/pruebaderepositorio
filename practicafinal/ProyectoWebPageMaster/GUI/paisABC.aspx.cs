@@ -54,7 +54,9 @@ namespace ProyectoWebPageMaster.GUI
                  title: 'Alert!',
                  content: 'Datos agregados correctamente!',
                  });
-                        </script>";
+             
+             </script>";
+
             ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", scriptjs, false);
             LimpiarControles();
             gridpais.DataSource = objpaisDAO.buscar_usuarios();

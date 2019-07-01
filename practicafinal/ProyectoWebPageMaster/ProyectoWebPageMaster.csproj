@@ -80,11 +80,14 @@
     <Content Include="GUI\Aventura.aspx" />
     <Content Include="GUI\Chick-Lit.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
+    <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\Espiritual.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
+    <Content Include="GUI\EstatusABC.aspx" />
     <Content Include="GUI\Fanfic.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
     <Content Include="GUI\Fantasia.aspx" />
+    <Content Include="GUI\GenerosABC.aspx" />
     <Content Include="GUI\historias.aspx" />
     <Content Include="GUI\home.aspx" />
     <Content Include="GUI\Humor.aspx" />
@@ -137,11 +140,13 @@
     <Content Include="recursos\css2\theme-paynes-grey.css" />
     <Content Include="recursos\css2\theme-portland-orange.css" />
     <Content Include="recursos\css2\theme-smoky-black.css" />
+    <Content Include="recursos\css\bootstrap.css" />
     <Content Include="recursos\css\bootstrap.min.css" />
     <Content Include="recursos\css\estilocards.css" />
     <Content Include="recursos\css\estiloiniciarsesion.css" />
     <Content Include="recursos\css\font-awesome.min.css" />
     <Content Include="recursos\css\ihover.css" />
+    <Content Include="recursos\css\jquery-confirm.css" />
     <Content Include="recursos\css\misestilos.css" />
     <Content Include="recursos\css\owl.carousel.css" />
     <Content Include="recursos\css\owl.carousel.min.css" />
@@ -281,6 +286,7 @@
     <Content Include="recursos\js2\material.min.js" />
     <Content Include="recursos\js2\ripples.min.js" />
     <Content Include="recursos\js2\sweetalert2.min.js" />
+    <Content Include="recursos\js\bootstrap.js" />
     <Content Include="recursos\js\bootstrap.min.js" />
     <Content Include="recursos\js\circle-active.js" />
     <Content Include="recursos\js\contact.js" />
@@ -289,6 +295,8 @@
     <Content Include="recursos\js\jquery-1.10.2.js" />
     <Content Include="recursos\js\jquery-3.2.1.min.js" />
     <Content Include="recursos\js\jquery-3.3.1.js" />
+    <Content Include="recursos\js\jquery-3.4.1.min.js" />
+    <Content Include="recursos\js\jquery-confirm.js" />
     <Content Include="recursos\js\jquery.form.js" />
     <Content Include="recursos\js\jquery.validate.min.js" />
     <Content Include="recursos\js\owl.carousel.js" />
@@ -1996,6 +2004,7 @@
   <ItemGroup>
     <Compile Include="BO\CATEGORIA_BO.cs" />
     <Compile Include="BO\estadosBO.cs" />
+    <Compile Include="BO\ESTATUS_BO.cs" />
     <Compile Include="BO\GENERO_BO.cs" />
     <Compile Include="BO\pais_BO.cs" />
     <Compile Include="BO\tipousuariosBO.cs" />
@@ -2003,6 +2012,7 @@
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\estadosDAO.cs" />
+    <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
     <Compile Include="DAO\PaisDAO.cs" />
     <Compile Include="DAO\tipousuariosDAO.cs" />
@@ -2084,6 +2094,13 @@
     <Compile Include="GUI\Ciencia_Ficcion.aspx.designer.cs">
       <DependentUpon>Ciencia_Ficcion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ClasificacionABC.aspx.cs">
+      <DependentUpon>ClasificacionABC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ClasificacionABC.aspx.designer.cs">
+      <DependentUpon>ClasificacionABC.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Espiritual.aspx.cs">
       <DependentUpon>Espiritual.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2097,6 +2114,13 @@
     </Compile>
     <Compile Include="GUI\estadosABCnew.aspx.designer.cs">
       <DependentUpon>estadosABCnew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EstatusABC.aspx.cs">
+      <DependentUpon>EstatusABC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EstatusABC.aspx.designer.cs">
+      <DependentUpon>EstatusABC.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Fanfic.aspx.cs">
       <DependentUpon>Fanfic.aspx</DependentUpon>
@@ -2118,6 +2142,13 @@
     </Compile>
     <Compile Include="GUI\Fantasia.aspx.designer.cs">
       <DependentUpon>Fantasia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GenerosABC.aspx.cs">
+      <DependentUpon>GenerosABC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\GenerosABC.aspx.designer.cs">
+      <DependentUpon>GenerosABC.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\historias.aspx.cs">
       <DependentUpon>historias.aspx</DependentUpon>

@@ -13,7 +13,7 @@ namespace ProyectoWebPageMaster.DAO
 
         public DataSet buscar_Genero()
         {
-            DataSet datos = objConectar.EjecutarSentencia("select * from GENERO");
+            DataSet datos = objConectar.EjecutarSentencia("select * from CATEGORIA");
             return datos;
         }
         public int AgregarCat(CATEGORIA_BO objAgregarCat)
@@ -31,7 +31,7 @@ namespace ProyectoWebPageMaster.DAO
         }
         public int ModificarCat(CATEGORIA_BO objModificarCat)
         {
-            int id = objConectar.EjecutarComando(string.Format("update CATEGORIA set NOMBRE='{0}'", objModificarCat.NOMBRE1));
+            int id = objConectar.EjecutarComando(string.Format("update CATEGORIA set NOMBRE='{0}' where CODIGO_CAT={1}", objModificarCat.NOMBRE1,objModificarCat.CODIGO_CAT1));
             return 1;
 
         }

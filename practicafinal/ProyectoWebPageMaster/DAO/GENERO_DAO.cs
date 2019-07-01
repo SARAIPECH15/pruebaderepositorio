@@ -31,7 +31,7 @@ namespace ProyectoWebPageMaster.DAO
         }
         public int ModificarGen(GENERO_BO objModificarGen)
         {
-            int id = objConectar.EjecutarComando(string.Format("update GENERO set NOMBRE='{0}'", objModificarGen.NOMBRE1));
+            int id = objConectar.EjecutarComando(string.Format("update GENERO set NOMBRE='{0}' where CODIGO_GEN={1}", objModificarGen.NOMBRE1,objModificarGen.CODIGO_GEN1));
             return 1;
 
         }
