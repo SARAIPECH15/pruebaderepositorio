@@ -81,6 +81,7 @@
     <Content Include="GUI\Chick-Lit.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\Espiritual.aspx" />
+    <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\Fanfic.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
     <Content Include="GUI\Fantasia.aspx" />
@@ -2089,6 +2090,13 @@
     </Compile>
     <Compile Include="GUI\Espiritual.aspx.designer.cs">
       <DependentUpon>Espiritual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\estadosABCnew.aspx.cs">
+      <DependentUpon>estadosABCnew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\estadosABCnew.aspx.designer.cs">
+      <DependentUpon>estadosABCnew.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Fanfic.aspx.cs">
       <DependentUpon>Fanfic.aspx</DependentUpon>
