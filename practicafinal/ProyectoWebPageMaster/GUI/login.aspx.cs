@@ -33,8 +33,13 @@ namespace ProyectoWebPageMaster.GUI
             {
                 Session["ID_US"] = id;
 
-                Response.Redirect("home.aspx");
+                Response.Redirect("../GUI/tiposdeusuariosABCnew.aspx");
             }
-        }
+
+
+			
+
+
+		}
     }
 }

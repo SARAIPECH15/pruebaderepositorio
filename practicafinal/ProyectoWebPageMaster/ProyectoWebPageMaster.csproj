@@ -2007,6 +2007,7 @@
     <Compile Include="BO\ESTATUS_BO.cs" />
     <Compile Include="BO\GENERO_BO.cs" />
     <Compile Include="BO\pais_BO.cs" />
+    <Compile Include="BO\registro_boo.cs" />
     <Compile Include="BO\tipousuariosBO.cs" />
     <Compile Include="BO\UsuariosBO.cs" />
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
@@ -2015,6 +2016,7 @@
     <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
     <Compile Include="DAO\PaisDAO.cs" />
+    <Compile Include="DAO\regis_dao.cs" />
     <Compile Include="DAO\tipousuariosDAO.cs" />
     <Compile Include="DAO\UsuariosDAO.cs" />
     <Compile Include="GUI\abcclasificacion.aspx.cs">

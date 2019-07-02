@@ -72,7 +72,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Panel de usuarios:</h6>
             <a class="collapse-item" href="UsuariosABC.aspx">Usuarios</a>
-            <a class="collapse-item" href="tiposdeusuariosABC.aspx">Tipos de usuarios</a>
+            <a class="collapse-item" href="tiposdeusuariosABCnew.aspx">Tipos de usuarios</a>
             <a class="collapse-item" href="paisABC.aspx">Paises</a>
             <a class="collapse-item" href="estadosABCnew.aspx">Estados</a>
           </div>
@@ -166,7 +166,7 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar por..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -306,7 +306,8 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+               
+				  <asp:Image ID="ImgfotoPerfil2" runat="server" CssClass="img-profile rounded-circle" />
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -345,7 +346,7 @@
         
 
                <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
+ 
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->

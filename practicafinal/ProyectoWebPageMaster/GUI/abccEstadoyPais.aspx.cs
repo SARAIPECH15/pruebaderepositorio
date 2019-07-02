@@ -41,6 +41,7 @@ namespace ProyectoWebPageMaster.GUI
 
 
         }
+
         public void LimpiarControles()
         {
             txtestado.Text = "";
