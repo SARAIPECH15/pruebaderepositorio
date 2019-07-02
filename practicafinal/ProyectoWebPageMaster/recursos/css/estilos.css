@@ -1,0 +1,28 @@
+﻿.cabecera {
+	height:150px;
+	background-color:#ff6a00;
+
+
+
+
+}
+.tamcolmenu {
+	height:810px;
+	border-right: 1px solid #808080;
+}
+
+.titulomenu {
+	background-color:#808080 !important;
+	color:#fff !important; 
+
+
+}
+.tamformulario{
+
+
+	width:394px;
+	top: 0px;
+	left: 5px;
+	height: 542px;
+}
+

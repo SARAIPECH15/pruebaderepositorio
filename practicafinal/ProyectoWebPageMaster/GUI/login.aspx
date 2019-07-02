@@ -4,7 +4,8 @@
     <link href="../recursos/Estilos_Login.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <div class="card">
+
+      <div class="card">
         <div class="card-body formulario">
             <div >
         <h1 class="card-title">Login</h1>
