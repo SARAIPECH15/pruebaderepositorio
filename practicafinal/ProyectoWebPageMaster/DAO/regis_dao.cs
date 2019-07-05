@@ -52,27 +52,53 @@ namespace ProyectoWebPageMaster.DAO
 		//sirve para busar al usuario al validar sesion
 		public void busca_usuario(registro_boo objbo)
 		{
-			DataSet datos = objConectar.EjecutarSentencia("select * from usuarios where id=" + objbo.Id);
-			objbo.Email = datos.Tables[0].Rows[0]["email"].ToString();
-			objbo.Nombre = datos.Tables[0].Rows[0]["nombre"].ToString();
-			objbo.Comtrasena = datos.Tables[0].Rows[0]["pass_usuario"].ToString();
-			objbo.Usuario = datos.Tables[0].Rows[0]["usuario"].ToString();
-			objbo.Fotoperfil = datos.Tables[0].Rows[0]["fotoperfil"].ToString();
+			DataSet datos = objConectar.EjecutarSentencia("select * from usuario where ID_US=" + objbo.Id);
+			objbo.Email = datos.Tables[0].Rows[0]["Email"].ToString();
+			objbo.Nombre = datos.Tables[0].Rows[0]["NOMBRE"].ToString();
+			objbo.Comtrasena = datos.Tables[0].Rows[0]["CONTRASENIA"].ToString();
+			objbo.Usuario = datos.Tables[0].Rows[0]["USUARIO"].ToString();
+			objbo.Fotoperfil = datos.Tables[0].Rows[0]["FOTO"].ToString();
 
 		}
 
 
+        public DataSet buscar_usuarios()
+        {
+            DataSet datos = objConectar.EjecutarSentencia("select * from usuario");
+            return datos;
+
+        }
+
+
+        public int modificarusuario(registro_boo objusuario)
+        {
+            int id = objConectar.EjecutarComando(string.Format("update usuario set NOMBRE='{0}',Email='{1}',USUARIO='{2}',CONTRASENIA='{3}',FOTO='{4}',APELLIDO='{5}',DIRECCION='{6}',COD_PAIS={7},COD_CIU={8},ID_TIPOUSUARIO={9} where ID_US={10}", objusuario.Nombre, objusuario.Email, objusuario.Usuario,objusuario.Comtrasena,objusuario.Fotoperfil, objusuario.Apeliido, objusuario.Direccion,objusuario.Cod_pais,objusuario.Cod_ciu,objusuario.Id_tipous, objusuario.Id));
+            return 1;
+        }
+
+
+        public int eliminarusuario(registro_boo objusuario)
+        {
+            int id = objConectar.EjecutarComando(string.Format("delete from usuario where ID_US={0}", objusuario.Id));
+            return 1;
+        }
+
+
+        public DataSet Consultar(string strSQL)
+        {
+            objConectar.establecerConexion();
+            objConectar.abrirConexion();
+            SqlCommand cmd = new SqlCommand(strSQL, objConectar.establecerConexion());
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            objConectar.cerrarConexion();
+            return ds;
+
+        }
 
 
 
 
-
-
-
-
-
-
-
-
-	}
+    }
 }
