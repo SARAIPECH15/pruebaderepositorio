@@ -67,8 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css3\main.css" />
+    <Content Include="css3\util.css" />
     <Content Include="css\sb-admin-2.css" />
     <Content Include="css\sb-admin-2.min.css" />
+    <Content Include="fonts3\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="fonts3\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="fonts3\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts3\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="fonts3\iconic\css\material-design-iconic-font.css" />
+    <Content Include="fonts3\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="fonts3\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="fonts3\JosefinSans\OFL.txt" />
+    <Content Include="fonts3\source-sans-pro\OFL.txt" />
+    <Content Include="GUI\1.aspx" />
     <Content Include="GUI\abcclasificacion.aspx" />
     <Content Include="GUI\abcestatus.aspx" />
     <Content Include="GUI\abcGenero.aspx" />
@@ -108,8 +120,14 @@
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
     <Content Include="GUI\tiposdeusuariosABCnew.aspx" />
     <Content Include="GUI\UsuariosABC.aspx" />
+    <Content Include="images3\bg-01.jpg" />
+    <Content Include="images3\icons\favicon.ico" />
+    <Content Include="images3\icons\icon-google.png" />
+    <Content Include="images3\icons\map-marker.png" />
     <Content Include="img\paradrop.png" />
     <Content Include="img\undraw_posting_photo.svg" />
+    <Content Include="js3\main.js" />
+    <Content Include="js3\map-custom.js" />
     <Content Include="js\demo\chart-area-demo.js" />
     <Content Include="js\demo\chart-bar-demo.js" />
     <Content Include="js\demo\chart-pie-demo.js" />
@@ -408,6 +426,36 @@
     <Content Include="recursos\vendors\revolution\php\twitter\RestApi.php" />
     <Content Include="recursos\vendors\revolution\php\vimeo\class-vimeo.php" />
     <Content Include="recursos\vendors\revolution\php\youtube\class-youtube.php" />
+    <Content Include="vendor3\animate\animate.css" />
+    <Content Include="vendor3\animsition\css\animsition.css" />
+    <Content Include="vendor3\animsition\css\animsition.min.css" />
+    <Content Include="vendor3\animsition\js\animsition.js" />
+    <Content Include="vendor3\animsition\js\animsition.min.js" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor3\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor3\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor3\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor3\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor3\bootstrap\js\popper.js" />
+    <Content Include="vendor3\bootstrap\js\popper.min.js" />
+    <Content Include="vendor3\bootstrap\js\tooltip.js" />
+    <Content Include="vendor3\countdowntime\countdowntime.js" />
+    <Content Include="vendor3\css-hamburgers\hamburgers.css" />
+    <Content Include="vendor3\css-hamburgers\hamburgers.min.css" />
+    <Content Include="vendor3\daterangepicker\daterangepicker.css" />
+    <Content Include="vendor3\daterangepicker\daterangepicker.js" />
+    <Content Include="vendor3\daterangepicker\moment.js" />
+    <Content Include="vendor3\daterangepicker\moment.min.js" />
+    <Content Include="vendor3\jquery\jquery-3.2.1.min.js" />
+    <Content Include="vendor3\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="vendor3\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="vendor3\select2\select2.css" />
+    <Content Include="vendor3\select2\select2.js" />
+    <Content Include="vendor3\select2\select2.min.css" />
+    <Content Include="vendor3\select2\select2.min.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.js" />
@@ -2019,6 +2067,13 @@
     <Compile Include="DAO\regis_dao.cs" />
     <Compile Include="DAO\tipousuariosDAO.cs" />
     <Compile Include="DAO\UsuariosDAO.cs" />
+    <Compile Include="GUI\1.aspx.cs">
+      <DependentUpon>1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\1.aspx.designer.cs">
+      <DependentUpon>1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\abcclasificacion.aspx.cs">
       <DependentUpon>abcclasificacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2326,6 +2381,65 @@
     <Content Include="MasterPage\Site1.Master" />
     <Content Include="MasterPage\administrador.Master" />
     <Content Include="MasterPage\administrador2.Master" />
+    <Content Include="fonts3\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts3\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts3\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts3\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts3\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\core.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\list.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\path.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="fonts3\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts3\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="fonts3\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="fonts3\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="fonts3\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-Bold.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-BoldItalic.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-Italic.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-Light.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-LightItalic.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-Regular.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-SemiBold.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-SemiBoldItalic.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-Thin.ttf" />
+    <Content Include="fonts3\JosefinSans\JosefinSans-ThinItalic.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-Black.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-BlackItalic.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-Bold.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-BoldItalic.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-ExtraLight.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-ExtraLightItalic.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-Italic.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-Light.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-LightItalic.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-Regular.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-SemiBold.ttf" />
+    <Content Include="fonts3\source-sans-pro\SourceSansPro-SemiBoldItalic.ttf" />
     <None Include="packages.config" />
     <Content Include="recursos\css\.DS_Store" />
     <Content Include="recursos\css\style.css.map" />
@@ -2565,6 +2679,12 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor3\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor3\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor3\bootstrap\css\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
