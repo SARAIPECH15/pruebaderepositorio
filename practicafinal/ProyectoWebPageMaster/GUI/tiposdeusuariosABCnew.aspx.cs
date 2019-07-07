@@ -107,6 +107,10 @@ namespace ProyectoWebPageMaster.GUI
         {
             txtidtipousuario.Text = HttpUtility.HtmlDecode(gridtipousuarios.SelectedRow.Cells[0].Text);
             txttipousuario.Text = HttpUtility.HtmlDecode(gridtipousuarios.SelectedRow.Cells[1].Text);
+
+            btneliminar.Visible = true;
+            btnagregar.Visible = false;
+            btnactualizar.Visible = true;
         }
 
         protected void gridtipousuarios_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -115,6 +119,17 @@ namespace ProyectoWebPageMaster.GUI
             {
                 e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(gridtipousuarios, "Select$" + e.Row.RowIndex);
                 e.Row.Attributes["style"] = "cursor:pointer";
+           
+            }
+        }
+
+        protected void txttipousuario_Load(object sender, EventArgs e)
+        {
+            if (txttipousuario.Enabled == true)
+            {
+                btnactualizar.Visible = false;
+                btnagregar.Visible = true;
+                btneliminar.Visible = false;
             }
         }
     }

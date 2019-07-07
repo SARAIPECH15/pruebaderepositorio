@@ -107,6 +107,10 @@ namespace ProyectoWebPageMaster.GUI
         {
             txtidpais.Text = HttpUtility.HtmlDecode(gridpais.SelectedRow.Cells[0].Text);
             txtpais.Text = HttpUtility.HtmlDecode(gridpais.SelectedRow.Cells[1].Text);
+
+            btneliminar.Visible = true;
+            btnagregar.Visible = false;
+            btnactualizar.Visible = true;
         }
 
         protected void gridpais_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -114,7 +118,17 @@ namespace ProyectoWebPageMaster.GUI
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
                 e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(gridpais, "Select$" + e.Row.RowIndex);
-                e.Row.Attributes["style"] = "cursor:pointer";
+                e.Row.Attributes["style"] = "cursor:pointer";       
+            }
+        }
+
+        protected void txtpais_Load(object sender, EventArgs e)
+        {
+            if (txtidpais.Enabled==true)
+            {
+                btneliminar.Visible = false;
+                btnagregar.Visible = true;
+                btnactualizar.Visible = false;
             }
         }
     }

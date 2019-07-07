@@ -19,7 +19,7 @@
                 
                     <asp:Label ID="Label1" runat="server" Text="Ingrese el nombre del Gènero:"></asp:Label><br /><br />
                     <asp:TextBox ID="txt_IDGen" Visible="false" runat="server"></asp:TextBox>
-                    <asp:TextBox ID="txt_Genero" required="required" runat="server"></asp:TextBox><br /><br><br />
+                    <asp:TextBox ID="txt_Genero" OnLoad="txt_Genero_Load" required="required" runat="server"></asp:TextBox><br /><br><br />
                     <asp:Button ID="btn_AgregarGen" runat="server" Text="Agregar" CssClass="btn btn-outline-success" OnClick="btn_AgregarGen_Click" />&nbsp
                     <asp:Button ID="btn_ActualizarGen" runat="server" Text="Actualizar" CssClass="btn btn-outline-warning" OnClick="btn_ActualizarGen_Click" />&nbsp
                     <asp:Button ID="btn_EliminarGen" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" OnClick="btn_EliminarGen_Click" />

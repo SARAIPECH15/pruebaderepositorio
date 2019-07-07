@@ -61,6 +61,20 @@ namespace ProyectoWebPageMaster.GUI
         {
             txt_IDClas.Text = dgv_Clasificacion.SelectedRow.Cells[0].Text.Trim();
             txt_Clasificacion.Text = dgv_Clasificacion.SelectedRow.Cells[1].Text.Trim();
+
+            btn_ActualizarClas.Visible = true;
+            btn_EliminarClas.Visible = true;
+            btn_AgregarClas.Visible = false;
+        }
+
+        protected void txt_Clasificacion_Load(object sender, EventArgs e)
+        {
+            if (txt_Clasificacion.Enabled == true)
+            {
+                btn_ActualizarClas.Visible = false;
+                btn_EliminarClas.Visible = false;
+                btn_AgregarClas.Visible = true;
+            }
         }
     }
 }
