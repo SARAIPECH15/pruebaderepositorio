@@ -31,23 +31,24 @@
                      <div class="contenedor">
             <div class="input-contenedor">
                 <i class="fas fa-user-circle icon"></i>
-                <asp:TextBox ID="txt_nombre" placeholder="Nombre" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_nombre" placeholder="Nombre" required="required" runat="server"></asp:TextBox>
             </div>
 
              <div class="input-contenedor">
                 <i class="fas fa-user-circle icon"></i>
-                <asp:TextBox ID="txt_Apellidos" placeholder="Apellidos" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_Apellidos" placeholder="Apellidos" required="required"  runat="server"></asp:TextBox>
             </div>
 
              <div class="input-contenedor">
                 <i class="fas fa-user-circle icon"></i>
-                <asp:TextBox ID="txt_Usuario" placeholder="Nombre de Usuario" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_Usuario" placeholder="Nombre de Usuario"  required="required" runat="server"></asp:TextBox>
             </div>
 
 						 
              <div class="input-contenedor">
              <i class="fas fa-map-marker-alt icon"></i>
-                <asp:TextBox ID="Txt_email" placeholder="Example@gmail.com" runat="server"></asp:TextBox>
+                <asp:TextBox ID="Txt_email" placeholder="Example@gmail.com" runat="server"></asp:TextBox>           
+             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="txt_email" ValidationExpression="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" SetFocusOnError="True" runat="server" ErrorMessage="Formato de email invalido"></asp:RegularExpressionValidator><br />
             </div>
 						 			 
         
@@ -55,13 +56,13 @@
 				 <asp:DropDownList ID="DropDownEstado" runat="server"></asp:DropDownList>
              <div class="input-contenedor">
              <i class="fas fa-map-marker-alt icon"></i>
-                <asp:TextBox ID="txt_Direccion" placeholder="Ingrese su dirección" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_Direccion" placeholder="Ingrese su dirección" required="required"  runat="server"></asp:TextBox>
             </div>
 
 
              <div class="input-contenedor">
               <i class="fas fa-lock icon"></i>
-                <asp:TextBox ID="txt_password" TextMode="Password" placeholder="Ingrese su contraseña" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_password" TextMode="Password" placeholder="Ingrese su contraseña" required="required"  runat="server"></asp:TextBox>
             </div>
 
                    <div class="custom-file">
