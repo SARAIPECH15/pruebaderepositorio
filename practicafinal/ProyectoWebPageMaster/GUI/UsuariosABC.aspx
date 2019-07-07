@@ -48,13 +48,13 @@
                     <div class="row">
                     <div class="col-md-6">
                           <asp:Label ID="Label4" runat="server" Text="Ingrese Nombre(s):"></asp:Label><br />
-                    <asp:TextBox ID="txt_nombre" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txt_nombre" required="required"  runat="server"></asp:TextBox><br />
 
                     <asp:Label ID="Label5" runat="server" Text="Ingrese Apellidos:"></asp:Label><br />
-                    <asp:TextBox ID="txt_Apellidos" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txt_Apellidos" required="required" runat="server"></asp:TextBox><br />
 
                     <asp:Label ID="Label6" runat="server" Text="Ingrese dirección:"></asp:Label><br />
-                    <asp:TextBox ID="txt_Direccion" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txt_Direccion" required="required" runat="server"></asp:TextBox><br />
                         <asp:Label ID="Label9" runat="server" Text="Ingrese su Email:"></asp:Label><br />
                         <asp:TextBox ID="Txt_email" runat="server" TextMode="Email" PlaceHolder="ejemplo@hotmail.com"></asp:TextBox><br />
                     <asp:Label ID="Label7" runat="server" Text="Ingrese Pais:"></asp:Label><br />
@@ -66,9 +66,9 @@
                         <asp:Label ID="Label11" runat="server" Text="Ingrese Tipo de Usuario"></asp:Label><br />
                         <asp:DropDownList ID="DropDownTipousuario" runat="server"></asp:DropDownList><br />
                     <asp:Label ID="Label2" runat="server" Text="Ingrese nombre de Usuario:"></asp:Label><br />
-                    <asp:TextBox ID="txt_Usuario" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txt_Usuario" required="required" runat="server"></asp:TextBox><br />
                     <asp:Label ID="Label3" runat="server" Text="Ingrese la contraseña:"></asp:Label><br />
-                    <asp:TextBox ID="txt_password" runat="server" TextMode="Password"></asp:TextBox><br /><br />
+                    <asp:TextBox ID="txt_password" required="required" runat="server" TextMode="Password"></asp:TextBox><br /><br />
 
 
                     </div>&nbsp

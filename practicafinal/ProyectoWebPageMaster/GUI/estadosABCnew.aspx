@@ -25,7 +25,7 @@
                     <asp:DropDownList ID="dropPaises" runat="server"></asp:DropDownList><br />
 
                     <asp:Label ID="Label1" runat="server" Text="Ingrese el Estado:"></asp:Label><br /><br />
-                    <asp:TextBox ID="txtestado" runat="server"></asp:TextBox><br /><br><br />
+                    <asp:TextBox ID="txtestado" required="required" runat="server"></asp:TextBox><br /><br><br />
                     <asp:Button ID="btnagregar" runat="server" Text="Agregar" CssClass="btn btn-outline-success" OnClick="btnagregar_Click" />&nbsp
                     <asp:Button ID="btnactualizar" runat="server" Text="Actualizar" CssClass="btn btn-outline-warning" OnClick="btnactualizar_Click" />&nbsp
                     <asp:Button ID="btneliminar" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" OnClick="btneliminar_Click" />

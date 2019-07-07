@@ -31,15 +31,6 @@ namespace ProyectoWebPageMaster.GUI {
         protected global::System.Web.UI.WebControls.TextBox txt_IDClas;
         
         /// <summary>
-        /// Control txt_Clasificacion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Clasificacion;
-        
-        /// <summary>
         /// Control btn_AgregarClas.
         /// </summary>
         /// <remarks>
