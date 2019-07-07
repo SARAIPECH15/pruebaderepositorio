@@ -19,7 +19,7 @@ namespace ProyectoWebPageMaster.GUI
         regis_dao objdao = new regis_dao();
 
         estadosDAO objestadosDAO = new estadosDAO();
-
+		estadosBO objestadosbo = new estadosBO();
         PaisDAO objpaisDAO = new PaisDAO();
 
 
@@ -30,10 +30,7 @@ namespace ProyectoWebPageMaster.GUI
             {
                 llenadoDropDownPais();
             }
-            if (!IsPostBack)
-            {
-                llenadoDropDownEstado();
-            }
+           
             if (!IsPostBack)
             {
                 llenadoDropDownTipousuario();
@@ -44,17 +41,22 @@ namespace ProyectoWebPageMaster.GUI
         }
 
 
-        private void llenadoDropDownPais()
-        {
 
+		private void llenadoDropDownPais()
+		{
+			
+		
             DropDownPais.DataSource = objpaisDAO.Consultar("Select * from PAIS");
             DropDownPais.DataTextField = "NOMBRE";
-            DropDownPais.DataValueField = "COD_PAIS";
+			DropDownPais.DataValueField = "COD_PAIS";
             DropDownPais.DataBind();
             DropDownPais.Items.Insert(0, new ListItem("Seleccionar", "0"));
+			DropDownEstado.Items.Insert(0, new ListItem("Seleccionar", "0"));
 
 
-        }
+
+		}
+
         public void LimpiarControles()
         {
             txt_Apellidos.Text = "";
@@ -86,17 +88,7 @@ namespace ProyectoWebPageMaster.GUI
 
 
         }
-        private void llenadoDropDownEstado()
-        {
-
-            DropDownEstado.DataSource = objestadosDAO.Consultar("Select * from CIUDAD");
-            DropDownEstado.DataTextField = "NOMBRE";
-            DropDownEstado.DataValueField = "COD_CIU";
-            DropDownEstado.DataBind();
-            DropDownEstado.Items.Insert(0, new ListItem("Seleccionar", "0"));
-
-
-        }
+       
 
         private void llenadoDropDownTipousuario()
         {
@@ -308,7 +300,7 @@ namespace ProyectoWebPageMaster.GUI
             txt_Apellidos.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[5].Text);
             txt_Direccion.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[6].Text);
             DropDownTipousuario.Text = dgv_usuarios.SelectedRow.Cells[7].Text;
-            DropDownPais.Text = dgv_usuarios.SelectedRow.Cells[8].Text;
+            DropDownPais.Text =HttpUtility.HtmlDecode (dgv_usuarios.SelectedRow.Cells[8].Text);
             DropDownEstado.Text = dgv_usuarios.SelectedRow.Cells[9].Text;
             Txt_email.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[10].Text);
            
@@ -330,5 +322,18 @@ namespace ProyectoWebPageMaster.GUI
                 e.Row.Attributes["style"] = "cursor:pointer";
             }
         }
-    }
+
+		protected void seleccionarpais(object sender, EventArgs e)
+		{
+			int usu = Convert.ToInt32(DropDownPais.SelectedValue);
+			DropDownEstado.DataSource = objestadosDAO.Consultar("Select * from CIUDAD where COD_PAIS="+usu);
+			DropDownEstado.DataTextField = "NOMBRE";
+
+			DropDownEstado.DataValueField = "COD_CIU";
+			DropDownEstado.DataBind();
+			DropDownEstado.Items.Insert(0, new ListItem("Seleccionar", "0"));
+			
+
+		}
+	}
 }

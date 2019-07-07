@@ -33,7 +33,7 @@ namespace ProyectoWebPageMaster.DAO
             objbo.Nombre = datos.Tables[0].Rows[0]["NOMBRE"].ToString();
             objbo.Contrasenia = datos.Tables[0].Rows[0]["CONTRASENIA"].ToString();
             objbo.Usuario = datos.Tables[0].Rows[0]["USUARIO"].ToString();
-           
+			objbo.Id_tipousuario =int.Parse(datos.Tables[0].Rows[0]["ID_TIPOUSUARIO"].ToString());
 
         }
 

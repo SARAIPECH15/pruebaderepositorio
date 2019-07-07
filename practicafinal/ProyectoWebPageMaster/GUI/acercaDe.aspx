@@ -9,8 +9,8 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
-                    <h2>About Us</h2>
-                    <p>Get to know us</p>
+                    <h2>Acerca de nosotros</h2>
+                    <p>Cnocenos</p>
                 </div>
             </div>
         </section>
@@ -24,12 +24,12 @@
                         <div class="challange_text_inner">
                             <div class="l_title">
                                 <img src="../recursos/img/icon/title-icon.png" alt="">
-                                <h6>Discover the features</h6>
-                                <h2>We don’t hide, we stand tall in front of chalenge</h2>
+                                <h6>¿Quiènes somos?</h6>
+                                <h2>Somos futuros programadores</h2>
                             </div>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
+                            <p>Somos Elias Moguel, Sarai Pech y Andrea Turriza, estudiantes del tercer cuatrimestre en la carrera de desarrollo de software multiplataforma en la Universidad Tecnològica Metropolitana (UTM). Como entregable del tercer cutrimiestre estamos desarrolando esta pàgina web dirigida hacìa escritores y lectores independientes. </p>
                             <div class="c_video">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=62QYQE6k7tg"><img src="img/icon/video-icon.png" alt="">See how we work </a>
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=62QYQE6k7tg"><img src="img/icon/video-icon.png" alt="">Mira como trabajamos</a>
                             </div>
                         </div>
                     </div>
@@ -49,60 +49,60 @@
                 <div class="testimonials_slider owl-carousel">
                     <div class="item">
                         <div class="testi_item">
-                            <h3>“Simply professionals”</h3>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+                            <h3>“Muy Profesionales”</h3>
+                            <p>Este equipo es uno de mis favoritos, siempre han sido muy responsables con las entregas cumpliendo con todos los puntos que se les pide, muy buen diseño y funcionalidad, sigan asì.</p>
                             <div class="media">
                                 <div class="d-flex">
                                     <img class="rounded-circle" src="../recursos/img/testimonials/testi-1.jpg" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Maria Smith</h4>
-                                    <h5>CEO Enterprise</h5>
+                                    <h4>Marisa Concespciòn</h4>
+                                    <h5>Maestra de Programaciòn en la UTM</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testi_item">
-                            <h3>“They are the best”</h3>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+                            <h3>“Son los mejores”</h3>
+                            <p>Los mejores estudiantes que he tenido, desde que les impartì la clase de POO supe que llegarìan lejos, me siento muy orgulloso de ellos, estoy segurpo de que llegaràn lejos con esta grandiosa pàgina Web</p>
                             <div class="media">
                                 <div class="d-flex">
                                     <img class="rounded-circle" src="../recursos/img/testimonials/testi-2.jpg" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Chriss Turner</h4>
-                                    <h5>CEO Enterprise</h5>
+                                    <h4>Aurelio Mex</h4>
+                                    <h5>Maestro de Programaciòn en la UTM</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testi_item">
-                            <h3>“We just love them”</h3>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+                            <h3>“Los adoro”</h3>
+                            <p>Muy buena programaciòn, una pàgina web bastante completa y amigable hacìa el usuario, espero mucho de ellos tanto en este proyecto como para el proyecto integrador, tengo alstas expectativas, sigan asì.</p>
                             <div class="media">
                                 <div class="d-flex">
                                     <img class="rounded-circle" src="../recursos/img/testimonials/testi-3.jpg" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Julie Smart</h4>
-                                    <h5>CEO Enterprise</h5>
+                                    <h4>Eduardo Moreno</h4>
+                                    <h5>Coordinador de al area TIC en la UTM</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testi_item">
-                            <h3>“Simply professionals”</h3>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+                            <h3>“Muy buenos”</h3>
+                            <p>Muy buena pàgina web, bastante funcional y completa, me impresiona que ha su corto periodo de estudios ya sean tan buenos programando, siendo ingeniosos para solucionar los problemas que se les presetan, espero bastante de ustedes. </p>
                             <div class="media">
                                 <div class="d-flex">
                                     <img class="rounded-circle" src="../recursos/img/testimonials/testi-1.jpg" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Maria Smith</h4>
-                                    <h5>CEO Enterprise</h5>
+                                    <h4>Ing. Pablo Tostado</h4>
+                                    <h5>Director de area TIC en la UTM</h5>
                                 </div>
                             </div>
                         </div>
@@ -120,26 +120,27 @@
                         <div class="left_company_text">
                             <div class="l_title">
                                 <img src="img/icon/title-icon.png" alt="">
-                                <h6>Discover the features</h6>
-                                <h2>We are a <span>Gibraltar</span> based Company</h2>
+                                <h6>Nuestras estadìsticas</h6>
+                                <h2>Somos<span>completamente</span>independientes</h2>
                             </div>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
+                            <p>Al ser una pàgina independiente, nos interesa saber que es lo que piensan nuestros usuarios sobre nuesta pàgina, aquì estan nuestras estadìsticas </p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="company_skill">
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellente sque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+							<br />
+                            <p>Estadìsticas en tiempo real</p>
                             <div class="our_skill_inner">
                                 <div class="single_skill">
-                                    <h3>Development</h3>
-                                    <div class="progress" data-value="70">
+                                    <h3>Desarrollo</h3>
+                                    <div class="progress" data-value="100">
                                         <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
+                                            <div class="progress_parcent"><span class="counter">100</span>%</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="single_skill">
-                                    <h3>Design</h3>
+                                    <h3>Diseño</h3>
                                     <div class="progress" data-value="90">
                                         <div class="progress-bar">
                                             <div class="progress_parcent"><span class="counter">90</span>%</div>
@@ -147,7 +148,7 @@
                                     </div>
                                 </div>
                                 <div class="single_skill">
-                                    <h3>SEO</h3>
+                                    <h3>Amigable al usuario</h3>
                                     <div class="progress" data-value="85">
                                         <div class="progress-bar">
                                             <div class="progress_parcent"><span class="counter">85</span>%</div>
@@ -155,7 +156,7 @@
                                     </div>
                                 </div>
                                 <div class="single_skill">
-                                    <h3>Development</h3>
+                                    <h3>Usabilidad</h3>
                                     <div class="progress" data-value="90">
                                         <div class="progress-bar">
                                             <div class="progress_parcent"><span class="counter">90</span>%</div>
@@ -163,10 +164,10 @@
                                     </div>
                                 </div>
                                 <div class="single_skill">
-                                    <h3>Management</h3>
-                                    <div class="progress" data-value="75">
+                                    <h3>Innovador</h3>
+                                    <div class="progress" data-value="85">
                                         <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
+                                            <div class="progress_parcent"><span class="counter">85</span>%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -182,8 +183,8 @@
         <section class="talk_area">
             <div class="container">
                 <div class="talk_text">
-                    <h4>Are you ready to talk?</h4>
-                    <a href="mailto:contact@sierracompany.com">contact@sierracompany.com</a>
+                    <h4>¿Estas listo para hablar? Contactanos</h4>
+                    <a href="mailto:contact@sierracompany.com">SaritaPech15@gmail.com</a>
                 </div>
             </div>
         </section>
@@ -197,7 +198,7 @@
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_about_widget">
                                 <img src="img/footer-logo.png" alt="">
-                                <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
+                                <p>Contactanos en redes sociales</p>
                             </aside>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -220,12 +221,12 @@
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_subs_widget">
                                 <div class="f_title">
-                                    <h3>Subscribe to newsletter</h3>
+                                    <h3>Suscribete</h3>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Your e-mail address here" aria-label="Your e-mail address here">
+                                    <input type="text" class="form-control" placeholder="Tu email aquì" aria-label="Tu email aquì">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-secondary submit_btn" type="button">Subscribe</button>
+                                        <button class="btn btn-secondary submit_btn" type="button">Suscribete</button>
                                     </span>
                                 </div>
                             </aside>

@@ -36,5 +36,31 @@ namespace ProyectoWebPageMaster.MasterPage
 
 
 		}
+
+		
+		protected void cerrar_Click1(object sender, EventArgs e)
+		{
+			Session["ID_US"] = null;
+
+			if (Session["ID_US"] == null)
+			{
+
+				Response.Redirect("../GUI/login.aspx");
+
+			}
+		}
+
+		protected void pruebita(object sender, EventArgs e)
+		{
+			Session["ID_US"] = null;
+
+			if (Session["ID_US"] == null)
+			{
+
+				Response.Redirect("../GUI/login.aspx");
+
+			}
+
+		}
 	}
 }

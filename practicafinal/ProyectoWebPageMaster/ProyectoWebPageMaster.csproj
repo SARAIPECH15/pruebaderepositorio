@@ -84,19 +84,15 @@
     <Content Include="GUI\abcclasificacion.aspx" />
     <Content Include="GUI\abcestatus.aspx" />
     <Content Include="GUI\abcGenero.aspx" />
-    <Content Include="GUI\abccEstadoyPais.aspx" />
-    <Content Include="GUI\abctipousuario.aspx" />
     <Content Include="GUI\abcTipousuarios2new.aspx" />
     <Content Include="GUI\acercaDe.aspx" />
     <Content Include="GUI\Administrador.aspx" />
     <Content Include="GUI\Aventura.aspx" />
-    <Content Include="GUI\Chick-Lit.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\Espiritual.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
-    <Content Include="GUI\Fanfic.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
     <Content Include="GUI\Fantasia.aspx" />
     <Content Include="GUI\GenerosABC.aspx" />
@@ -105,16 +101,11 @@
     <Content Include="GUI\Humor.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
-    <Content Include="GUI\Misterio.aspx" />
-    <Content Include="GUI\Novela_Historica.aspx" />
-    <Content Include="GUI\Novela_Juvenil.aspx" />
     <Content Include="GUI\pais.aspx" />
     <Content Include="GUI\paisABC.aspx" />
-    <Content Include="GUI\Paranormal.aspx" />
     <Content Include="GUI\perfil.aspx" />
     <Content Include="GUI\Poesia.aspx" />
     <Content Include="GUI\REGISTRO.aspx" />
-    <Content Include="GUI\Romance.aspx" />
     <Content Include="GUI\servicios.aspx" />
     <Content Include="GUI\terminosycondiciones.aspx" />
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
@@ -2095,20 +2086,6 @@
     <Compile Include="GUI\abcGenero.aspx.designer.cs">
       <DependentUpon>abcGenero.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\abccEstadoyPais.aspx.cs">
-      <DependentUpon>abccEstadoyPais.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\abccEstadoyPais.aspx.designer.cs">
-      <DependentUpon>abccEstadoyPais.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\abctipousuario.aspx.cs">
-      <DependentUpon>abctipousuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\abctipousuario.aspx.designer.cs">
-      <DependentUpon>abctipousuario.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GUI\abcTipousuarios2new.aspx.cs">
       <DependentUpon>abcTipousuarios2new.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2136,13 +2113,6 @@
     </Compile>
     <Compile Include="GUI\Aventura.aspx.designer.cs">
       <DependentUpon>Aventura.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Chick-Lit.aspx.cs">
-      <DependentUpon>Chick-Lit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Chick-Lit.aspx.designer.cs">
-      <DependentUpon>Chick-Lit.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Ciencia_Ficcion.aspx.cs">
       <DependentUpon>Ciencia_Ficcion.aspx</DependentUpon>
@@ -2178,13 +2148,6 @@
     </Compile>
     <Compile Include="GUI\EstatusABC.aspx.designer.cs">
       <DependentUpon>EstatusABC.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Fanfic.aspx.cs">
-      <DependentUpon>Fanfic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Fanfic.aspx.designer.cs">
-      <DependentUpon>Fanfic.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\FanFic_estesi.aspx.cs">
       <DependentUpon>FanFic_estesi.aspx</DependentUpon>
@@ -2242,27 +2205,6 @@
     <Compile Include="GUI\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Misterio.aspx.cs">
-      <DependentUpon>Misterio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Misterio.aspx.designer.cs">
-      <DependentUpon>Misterio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Novela_Historica.aspx.cs">
-      <DependentUpon>Novela_Historica.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Novela_Historica.aspx.designer.cs">
-      <DependentUpon>Novela_Historica.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Novela_Juvenil.aspx.cs">
-      <DependentUpon>Novela_Juvenil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Novela_Juvenil.aspx.designer.cs">
-      <DependentUpon>Novela_Juvenil.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GUI\pais.aspx.cs">
       <DependentUpon>pais.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2276,13 +2218,6 @@
     </Compile>
     <Compile Include="GUI\paisABC.aspx.designer.cs">
       <DependentUpon>paisABC.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Paranormal.aspx.cs">
-      <DependentUpon>Paranormal.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Paranormal.aspx.designer.cs">
-      <DependentUpon>Paranormal.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\perfil.aspx.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
@@ -2304,13 +2239,6 @@
     </Compile>
     <Compile Include="GUI\REGISTRO.aspx.designer.cs">
       <DependentUpon>REGISTRO.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Romance.aspx.cs">
-      <DependentUpon>Romance.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Romance.aspx.designer.cs">
-      <DependentUpon>Romance.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\servicios.aspx.cs">
       <DependentUpon>servicios.aspx</DependentUpon>
