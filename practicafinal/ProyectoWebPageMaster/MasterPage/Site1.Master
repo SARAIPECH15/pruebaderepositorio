@@ -152,7 +152,7 @@
                             Escribir
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li class="nav-item"><a class="nav-link" href="../GUI/Romance.aspx">Crear Historias</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/CrearHistorias.aspx">Crear Historias</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../GUI/historias.aspx">Ver Historias</a></li>
                                
                             </ul>

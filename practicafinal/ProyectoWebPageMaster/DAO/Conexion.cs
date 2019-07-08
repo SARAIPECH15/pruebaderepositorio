@@ -18,11 +18,10 @@ namespace ProyectoWebPageMaster.DAO
         public SqlConnection establecerConexion()
         {
             //datos para la conexión usuario, bd, etc.
-<<<<<<< HEAD
+
             string cs = "Data Source=LAPTOP-9ONODM5O;Initial Catalog=PROYECTOWEB;Integrated Security=True";
-=======
-            string cs = "Data Source=ANDREA-TURRIZA\\SQLEXPRESS;Initial Catalog=PROYECTOWEB;Integrated Security=True";
->>>>>>> 6dcf9e0a994911c88996ecd6022cabb7edcabe28
+            
+
             con = new SqlConnection(cs); //instancia el objeto para la conexion a la bd
             return con; //el objeto
         }
