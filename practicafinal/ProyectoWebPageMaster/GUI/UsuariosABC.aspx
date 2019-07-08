@@ -58,7 +58,7 @@
                         <asp:Label ID="Label9" runat="server" Text="Ingrese su Email:"></asp:Label><br />
                         <asp:TextBox ID="Txt_email" runat="server" TextMode="Email" PlaceHolder="ejemplo@hotmail.com"></asp:TextBox><br />
                     <asp:Label ID="Label7" runat="server" Text="Ingrese Pais:"></asp:Label><br />
-                    <asp:DropDownList ID="DropDownPais" runat="server"></asp:DropDownList><br />
+                    <asp:DropDownList ID="DropDownPais" runat="server" OnSelectedIndexChanged="seleccionarpais" AutoPostBack="true"></asp:DropDownList><br />
 
                         <asp:Label ID="Label8" runat="server" Text="Ingrese Estado:"></asp:Label><br />
 
