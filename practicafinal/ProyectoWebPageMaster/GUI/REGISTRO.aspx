@@ -13,12 +13,6 @@
 		}
 	</script>
 
-
-
-
-
-
-
     <link href="../recursos/Estilos_Login.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -47,8 +41,7 @@
 						 
              <div class="input-contenedor">
              <i class="fas fa-map-marker-alt icon"></i>
-                <asp:TextBox ID="Txt_email" placeholder="Example@gmail.com" runat="server"></asp:TextBox>           
-             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="txt_email" ValidationExpression="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" SetFocusOnError="True" runat="server" ErrorMessage="Formato de email invalido"></asp:RegularExpressionValidator><br />
+                <asp:TextBox ID="Txt_email" placeholder="Example@gmail.com" required="required" runat="server"></asp:TextBox>           
             </div>
 						 			 
         

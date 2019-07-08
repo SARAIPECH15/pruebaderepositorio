@@ -18,7 +18,7 @@
                 
                     <asp:Label ID="Label1" runat="server" Text="Ingrese el tipo de Clasificaciòn:"></asp:Label><br /><br />
                     <asp:TextBox ID="txt_IDClas" Visible="false" runat="server"></asp:TextBox>
-                    <asp:TextBox ID="txt_Clasificacion" runat="server"></asp:TextBox><br /><br><br />
+                    <asp:TextBox ID="txt_Clasificacion" OnLoad="txt_Clasificacion_Load" required="required"  runat="server"></asp:TextBox><br /><br><br />
                     <asp:Button ID="btn_AgregarClas" runat="server" Text="Agregar" CssClass="btn btn-outline-success" OnClick="btn_AgregarClas_Click" />&nbsp
                     <asp:Button ID="btn_ActualizarClas" runat="server" Text="Actualizar" CssClass="btn btn-outline-warning" OnClick="btn_ActualizarClas_Click"/>&nbsp
                     <asp:Button ID="btn_EliminarClas" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" OnClick="btn_EliminarClas_Click" />

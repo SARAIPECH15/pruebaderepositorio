@@ -18,7 +18,7 @@
                 
                     <asp:Label ID="Label1" runat="server" Text="Ingrese el tipo de Estatus:"></asp:Label><br /><br />
                     <asp:TextBox ID="txt_IDEst" Visible="false" runat="server"></asp:TextBox>
-                    <asp:TextBox ID="txt_Est" runat="server"></asp:TextBox><br /><br><br />
+                    <asp:TextBox ID="txt_Est" OnLoad="txt_Est_Load1" required="required"  runat="server"></asp:TextBox><br /><br><br />
                     <asp:Button ID="btn_AgregarEst" runat="server" Text="Agregar" CssClass="btn btn-outline-success" OnClick="btn_AgregarEst_Click" />&nbsp
                     <asp:Button ID="btn_ActualizarEst" runat="server" Text="Actualizar" CssClass="btn btn-outline-warning" OnClick="btn_ActualizarEst_Click" />&nbsp
                     <asp:Button ID="btn_EliminarEst" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" OnClick="btn_EliminarEst_Click" />

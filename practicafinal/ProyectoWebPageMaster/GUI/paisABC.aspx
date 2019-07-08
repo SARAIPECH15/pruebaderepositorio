@@ -24,7 +24,7 @@
 
 
                     <asp:Label ID="Label1" runat="server" Text="Ingrese el País:"></asp:Label><br /><br />
-                    <asp:TextBox ID="txtpais" runat="server"></asp:TextBox><br /><br><br />
+                    <asp:TextBox ID="txtpais" OnLoad="txtpais_Load" required="required" runat="server"></asp:TextBox><br /><br><br />
                     <asp:Button ID="btnagregar" runat="server" Text="Agregar" CssClass="btn btn-outline-success" OnClick="btnagregar_Click" />&nbsp
                     <asp:Button ID="btnactualizar" runat="server" Text="Actualizar" CssClass="btn btn-outline-warning" OnClick="btnactualizar_Click" />&nbsp
                     <asp:Button ID="btneliminar" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" OnClick="btneliminar_Click" />
