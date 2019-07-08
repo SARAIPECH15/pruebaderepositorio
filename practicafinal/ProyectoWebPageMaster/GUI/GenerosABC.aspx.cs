@@ -55,6 +55,7 @@ namespace ProyectoWebPageMaster.GUI
             {
                 e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(dgv_Genero, "Select$" + e.Row.RowIndex);
                 e.Row.Attributes["style"] = "cursor:pointer";
+              
             }
         }
 
@@ -62,6 +63,21 @@ namespace ProyectoWebPageMaster.GUI
         {
             txt_IDGen.Text = dgv_Genero.SelectedRow.Cells[0].Text.Trim();
             txt_Genero.Text = dgv_Genero.SelectedRow.Cells[1].Text.Trim();
+
+            btn_AgregarGen.Visible = false;
+            btn_EliminarGen.Visible = true;
+            btn_ActualizarGen.Visible = true;
         }
+
+        protected void txt_Genero_Load(object sender, EventArgs e)
+        {
+            if (txt_Genero.Enabled==true)
+            {
+                btn_ActualizarGen.Visible = false;
+                btn_EliminarGen.Visible = false;
+                btn_AgregarGen.Visible = true;
+            }
+        }
+           
     }
 }

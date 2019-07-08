@@ -89,8 +89,8 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Panel de historias:</h6>
             <a class="collapse-item" href="GenerosABC.aspx">Generos</a>
-            <a class="collapse-item" href="CategoriasABC.aspx">Categorias</a>
-            <a class="collapse-item" href="StatusABC.aspx">Status</a>
+            <a class="collapse-item" href="ClasificacionABC.aspx">Categorias</a>
+            <a class="collapse-item" href="EstatusABC.aspx">Status</a>
             <a class="collapse-item" href="utilities-other.html">Clasificacion</a>
           </div>
         </div>

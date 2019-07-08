@@ -71,6 +71,25 @@ namespace ProyectoWebPageMaster.GUI
         {
             txt_IDEst.Text = dgv_Estatus.SelectedRow.Cells[0].Text.Trim();
             txt_Est.Text = dgv_Estatus.SelectedRow.Cells[1].Text.Trim();
+
+            btn_ActualizarEst.Visible = true;
+            btn_EliminarEst.Visible = true;
+            btn_AgregarEst.Visible = false;
+        }
+
+        protected void txt_Est_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        protected void txt_Est_Load1(object sender, EventArgs e)
+        {
+            if (txt_Est.Enabled == true)
+            {
+                btn_AgregarEst.Visible = true;
+                btn_EliminarEst.Visible = false;
+                btn_ActualizarEst.Visible = false;
+            }
         }
     }
 }

@@ -129,6 +129,10 @@ namespace ProyectoWebPageMaster.GUI
             txtestado.Text = HttpUtility.HtmlDecode(gridestado.SelectedRow.Cells[2].Text);
             dropPaises.Text = HttpUtility.HtmlDecode(gridestado.SelectedRow.Cells[1].Text);
 
+            btnactualizar.Visible = true;
+            btnagregar.Visible = false;
+            btneliminar.Visible = true;
+
         }
 
         protected void gridestado_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -137,6 +141,17 @@ namespace ProyectoWebPageMaster.GUI
             {
                 e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(gridestado, "Select$" + e.Row.RowIndex);
                 e.Row.Attributes["style"] = "cursor:pointer";
+
+            }
+        }
+
+        protected void txtestado_Load(object sender, EventArgs e)
+        {
+            if (txtestado.Enabled==true)
+            {
+                btnactualizar.Visible = false;
+                btnagregar.Visible = true;
+                btneliminar.Visible = false;
             }
         }
     }
