@@ -3,6 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+     <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="container">
+                <div class="banner_inner_text">
+                    <h2>Terminos y Condiciones</h2>
+                    <p>conoce nuestras reglas!</p>
+                </div>
+            </div>
+        </section>
+
 
      <!--================Feature Area =================-->
         <section class="feature_area">

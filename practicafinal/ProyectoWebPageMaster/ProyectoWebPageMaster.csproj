@@ -165,6 +165,8 @@
     <Content Include="recursos\css\owl.theme.default.css" />
     <Content Include="recursos\css\owl.theme.default.min.css" />
     <Content Include="recursos\css\responsive.css" />
+    <Content Include="recursos\css\richtext.min.css" />
+    <Content Include="recursos\css\site.css" />
     <Content Include="recursos\css\style.css" />
     <Content Include="recursos\css\custom.css" />
     <Content Include="recursos\css\font-awesome.css" />
@@ -235,6 +237,7 @@
     <Content Include="recursos\img\instagram\right-instagram\r-in-6.jpg" />
     <Content Include="recursos\img\iphone4.png" />
     <Content Include="recursos\img\leyendo.png" />
+    <Content Include="recursos\img\librohd.jpg" />
     <Content Include="recursos\img\Libro_Aventura\dificil-de-doblegar.jpg" />
     <Content Include="recursos\img\Libro_Aventura\los-nietos-de-dios.jpg" />
     <Content Include="recursos\img\Libro_Aventura\mareas-del-tiempo.jpg" />
@@ -311,6 +314,8 @@
     <Content Include="recursos\js\jquery-3.4.1.min.js" />
     <Content Include="recursos\js\jquery-confirm.js" />
     <Content Include="recursos\js\jquery.form.js" />
+    <Content Include="recursos\js\jquery.richtext.js" />
+    <Content Include="recursos\js\jquery.richtext.min.js" />
     <Content Include="recursos\js\jquery.validate.min.js" />
     <Content Include="recursos\js\owl.carousel.js" />
     <Content Include="recursos\js\popper.min.js" />
@@ -2631,6 +2636,7 @@
     <Content Include="vendor3\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="vendor3\bootstrap\css\bootstrap.css.map" />
     <Content Include="vendor3\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="recursos\css\richtext.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

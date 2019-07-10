@@ -53,7 +53,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 	<script src="../recursos/js/jquery-1.10.2.js"></script>
       <!-- BOOTSTRAP SCRIPTS -->
-    <script src="../recursos/js/bootstrap.min.js"></script>
+    <script src="../recursos/js/bootstrap.min.js"></script>  
       <!-- CUSTOM SCRIPTS -->
     <script src="../recursos/js/custom.js"></script>
         
@@ -86,7 +86,8 @@
 	
     
 
-
+     <link href="../recursos/css/jquery-confirm.css" rel="stylesheet" />
+     <script src="../recursos/js/jquery-confirm.js"></script>
 
 
 
@@ -243,10 +244,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="../recursos/js/jquery-3.2.1.min.js"></script>
+  <!--      <script src="../recursos/js/jquery-3.2.1.min.js"></script> -->
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="../recursos/js/popper.min.js"></script>
-        <script src="../recursos/js/bootstrap.min.js"></script>
+   <!--     <script src="../recursos/js/bootstrap.min.js"></script>    -->
         <!-- Rev slider js -->
         <script src="../recursos/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="../recursos/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>

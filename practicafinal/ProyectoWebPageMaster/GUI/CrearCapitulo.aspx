@@ -8,6 +8,13 @@
     <title></title>
     <link href="../recursos/css/bootstrap.css" rel="stylesheet" />
     <link href="../recursos/css/estilosCapitulo.css" rel="stylesheet" />
+    <script src="../recursos/js/jquery-3.2.1.min.js"></script>
+    <script src="../recursos/js/jquery.richtext.js"></script>
+    <link href="../recursos/css/richtext.min.css" rel="stylesheet" />
+    <script src="../recursos/js/jquery.richtext.js"></script>
+    <link href="../recursos/css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,10 +35,10 @@
                 <div class="col-md-10 nav justify-content-end">
                     <br /><br />
                     <asp:Button ID="Button1" runat="server" Text="Guardar" CssClass="btn btn-info" />&nbsp
-                     <asp:Button ID="Button3" runat="server" Text="Publicar" CssClass="btn btn-warning" />
+                     <asp:Button ID="btnPublicar" runat="server" Text="Publicar" CssClass="btn btn-warning" data-toggle="modal" data-target="#modalLoginForm" />
                 </div>
             </div>
-            <br /><br />
+            <br />
             <hr />
             <div class="row">
                 <div class="col-md-3"></div>
@@ -46,9 +53,50 @@
 
 
             </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <br /><br />
+                    <textarea id="txtAreacapitulo" cols="20" rows="2"></textarea>
+                    <script>
+                   $(document).ready(function() {
+                     $('#txtAreacapitulo').richText();
+                     });
+                    </script>
 
+                </div>
+                <div class="col-md-2"></div>
+
+
+
+            </div>
         </div>
         
+
+        <!--modal para enviar al admi-->
+
+            <div class="modal" tabindex="-1" role="dialog" id="modalLoginForm">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Felicidades!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Tu capítulo fue enviado para aprobar.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     </form>
 </body>
 </html>

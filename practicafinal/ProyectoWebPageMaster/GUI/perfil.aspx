@@ -17,8 +17,10 @@
         <div class="img">  <asp:Image ID="imgperfilusuario" runat="server"  /></div>
         <div class="info">
           <div class="info-back">
-            <h3>Sarai Pech</h3>
-            <p>sarita@gmail.com</p>
+              <br /><br />
+              <asp:Label ID="lblnombreusuario" runat="server" Text="Label" BackColor="Black"></asp:Label>
+   <!--         <h3>Sarai Pech</h3>  -->
+    <!--        <p>sarita@gmail.com</p>           -->
           </div>
         </div></a></div>
     <!-- end normal -->

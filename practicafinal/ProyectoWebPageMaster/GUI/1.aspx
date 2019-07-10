@@ -32,27 +32,26 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
+	
 
-		<div class="container-login100" style="background-image: url('../images3/bg-01.jpg');">
+
+		<div class="container-login100" style="background-image: url('../recursos/img/librohd.jpg');">
+          
+        <div><br /><br /><br /><br />
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+                      
 			<form class="login100-form validate-form">
 				<span class="login100-form-title p-b-37">
-					Sign In
+					Iniciar sesión
 				</span>
 
 				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-					<input class="input100" type="text" name="username" placeholder="username or email" id="txt_Usuario" runat="server">
+					<input class="input100" type="text" name="username" placeholder="Usuario" id="txt_Usuario" runat="server">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-					<input class="input100" type="password" name="pass" placeholder="password" id="txt_password" runat="server">
+					<input class="input100" type="password" name="pass" placeholder="Contraseña" id="txt_password" runat="server">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -86,6 +85,7 @@
 
 			
 		</div>
+            </div>
 	</div>
 	
 	

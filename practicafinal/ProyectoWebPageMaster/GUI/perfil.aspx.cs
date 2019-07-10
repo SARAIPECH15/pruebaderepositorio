@@ -30,7 +30,7 @@ namespace ProyectoWebPageMaster.GUI
                 objdao2.busca_usuario(objbo2);
                 string ruta = "~/recursos/fotos_usuarios/" + objbo2.Id + objbo2.Fotoperfil;
                imgperfilusuario.ImageUrl = ruta;
-               
+                lblnombreusuario.Text = objbo2.Usuario;
             }
 
 

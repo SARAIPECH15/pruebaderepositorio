@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using ProyectoWebPageMaster.BO;
 using ProyectoWebPageMaster.DAO;
 
+
+
 namespace ProyectoWebPageMaster.GUI
 {
 	public partial class _1 : System.Web.UI.Page
@@ -35,7 +37,18 @@ namespace ProyectoWebPageMaster.GUI
 			id = objdaoLogin.verificar_login(objboLogin);
 			if (id != 0)
 			{
-				int tipo1;
+                string scriptjs = @"<script type='text/javascript'>
+                            $.alert({
+                title: 'Alert!',
+                  content: 'Bienvenido!',
+                        });
+                        </script>";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", scriptjs, false);
+
+
+
+
+                int tipo1;
 				Session["ID_US"] = id;
 				objboLogin.Id_us = Convert.ToInt32(Session["ID_US"]);
 				objdaoLogin.busca_usuario(objboLogin);
@@ -49,7 +62,16 @@ namespace ProyectoWebPageMaster.GUI
 					Response.Redirect("../GUI/home.aspx");
 				}
 			}
-
+            else
+            {
+                string scriptjs = @"<script type='text/javascript'>
+                            $.alert({
+                title: 'Alert!',
+                  content: 'Usuario no registrado!',
+                        });
+                        </script>";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", scriptjs, false);
+            }
 
 			
 
