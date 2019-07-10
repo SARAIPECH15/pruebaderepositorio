@@ -32,12 +32,12 @@ namespace ProyectoWebPageMaster.DAO
 
 		public int verificar_login(registro_boo objbo)
 		{
-			DataSet datos = objConectar.EjecutarSentencia("select id from usuarios where usuario='" + objbo.Usuario + "' and pass_usuario='" + objbo.Comtrasena + "'");
+			DataSet datos = objConectar.EjecutarSentencia("select ID_US from USUARIO where USUARIO='" + objbo.Usuario + "' and CONTRASENIA='" + objbo.Comtrasena + "'");
 			int id = 0;
 
 			if (datos.Tables[0].Rows.Count > 0)
 			{
-				id = Convert.ToInt32(datos.Tables[0].Rows[0]["id"]);
+				id = Convert.ToInt32(datos.Tables[0].Rows[0]["ID_US"]);
 
 			}
 			return id;

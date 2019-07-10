@@ -141,21 +141,24 @@
                                 <li class="nav-item"><a class="nav-link" href="../GUI/historias.aspx">Acción</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../GUI/Aventura.aspx">Aventura</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../GUI/Chick-Lit.aspx">Chick-Lit</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Ciencia_Ficcion.aspx">Ciencia Ficción</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Espiritual.aspx">Espiritual</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Fantasia.aspx">Fantasia</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Humor.aspx">Humor</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Novela_Historica.aspx">Novela Historica</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Novela_Juvenil.aspx">Novela Juvenil</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Poesia.aspx">Poesia</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Fanfic.aspx">Historias Cortas</a></li>
+                                 
                                   <li class="nav-item"><a class="nav-link" href="../GUI/Misterio.aspx">Misterio</a></li>
                                   <li class="nav-item"><a class="nav-link" href="../GUI/Paranormal.aspx">Paranormal</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../GUI/FanFic_estesi.aspx">FanFic</a></li>
                             </ul>
                         </li>
+                          <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Escribir
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="nav-item"><a class="nav-link" href="../GUI/CrearHistorias.aspx">Crear Historias</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/historias.aspx">Ver Historias</a></li>
+                               
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="../GUI/perfil.aspx">Perfil</a></li>
-                      <li class="nav-item"> <asp:Label ID="lblusuario" runat="server" Text="Label"></asp:Label></li>
+                     
                     </ul>
                 </div>
             </nav>

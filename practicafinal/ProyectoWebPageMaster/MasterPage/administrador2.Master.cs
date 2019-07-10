@@ -22,7 +22,7 @@ namespace ProyectoWebPageMaster.MasterPage
 
 			if (Session["ID_US"] == null)
 			{
-				Response.Redirect("../GUI/login.aspx");
+				Response.Redirect("../GUI/1.aspx");
 
 			}
 			else
@@ -62,5 +62,18 @@ namespace ProyectoWebPageMaster.MasterPage
 			}
 
 		}
+
+        public void cerrarsesion()
+        {
+            Session["ID_US"] = null;
+
+            if (Session["ID_US"] == null)
+            {
+
+                Response.Redirect("../GUI/login.aspx");
+
+            }
+        }
+
 	}
 }

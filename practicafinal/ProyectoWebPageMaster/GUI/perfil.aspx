@@ -14,7 +14,7 @@
                    <!-- normal -->
     <div class="ih-item circle effect1"><a href="#">
         <div class="spinner"></div>
-        <div class="img"><img src="../recursos/img/fotos_perfil/perfil.jpg" alt="img"></div>
+        <div class="img">  <asp:Image ID="imgperfilusuario" runat="server"  /></div>
         <div class="info">
           <div class="info-back">
             <h3>Sarai Pech</h3>
@@ -22,8 +22,8 @@
           </div>
         </div></a></div>
     <!-- end normal -->
-         
-
+     <!--  <img src="../recursos/img/fotos_perfil/perfil.jpg" alt="img">  -->
+               
              </div>
              <div class="col-md-5"></div>
                     </div>

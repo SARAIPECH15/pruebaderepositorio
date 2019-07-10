@@ -90,6 +90,8 @@
     <Content Include="GUI\Aventura.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\ClasificacionABC.aspx" />
+    <Content Include="GUI\CrearCapitulo.aspx" />
+    <Content Include="GUI\crearHistorias.aspx" />
     <Content Include="GUI\Espiritual.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
@@ -153,6 +155,7 @@
     <Content Include="recursos\css\bootstrap.min.css" />
     <Content Include="recursos\css\estilocards.css" />
     <Content Include="recursos\css\estiloiniciarsesion.css" />
+    <Content Include="recursos\css\estilosCapitulo.css" />
     <Content Include="recursos\css\font-awesome.min.css" />
     <Content Include="recursos\css\ihover.css" />
     <Content Include="recursos\css\jquery-confirm.css" />
@@ -279,6 +282,7 @@
     <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-8.jpg" />
     <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-9.jpg" />
     <Content Include="recursos\img\service-bg.jpg" />
+    <Content Include="recursos\img\sinimagen.png" />
     <Content Include="recursos\img\team\people\people-1.jpg" />
     <Content Include="recursos\img\team\people\people-2.jpg" />
     <Content Include="recursos\img\team\people\people-3.jpg" />
@@ -2127,6 +2131,20 @@
     </Compile>
     <Compile Include="GUI\ClasificacionABC.aspx.designer.cs">
       <DependentUpon>ClasificacionABC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CrearCapitulo.aspx.cs">
+      <DependentUpon>CrearCapitulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CrearCapitulo.aspx.designer.cs">
+      <DependentUpon>CrearCapitulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\crearHistorias.aspx.cs">
+      <DependentUpon>crearHistorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\crearHistorias.aspx.designer.cs">
+      <DependentUpon>crearHistorias.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Espiritual.aspx.cs">
       <DependentUpon>Espiritual.aspx</DependentUpon>
