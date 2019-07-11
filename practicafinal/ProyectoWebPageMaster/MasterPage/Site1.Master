@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-
+	<link href="../recursos/css/ESTILOSCROLL.css" rel="stylesheet" />
 
 	 <link href="../recursos/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->

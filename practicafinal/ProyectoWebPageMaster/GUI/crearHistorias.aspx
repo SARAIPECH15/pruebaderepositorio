@@ -25,7 +25,7 @@
 
 
      <!--================Banner Area =================-->
-        <section class="banner_area">
+        <section class="banner_area">99
             <div class="container">
                 <div class="banner_inner_text">
                     <h2>Crear Historias</h2>
@@ -64,9 +64,13 @@
                  <asp:Label ID="Label2" runat="server" Text="Descripción:"></asp:Label><br />
                  <textarea id="TextArea1" cols="130" rows="2" class="form-control"></textarea><br /><br />
                  <hr />
-                 <asp:Label ID="Label3" runat="server" Text="Genero:"></asp:Label>&nbsp
-                 <asp:DropDownList ID="DropDownList1" runat="server" ></asp:DropDownList><br /><br />
+				 <div class="form-check">
+					 <div Class="CheckBoxList1 checkbox checkbox-primary ">
+                 <asp:Label ID="Label3" runat="server" Text="Género:" CssClass="CheckBoxLabel" ></asp:Label>&nbsp
+                 <asp:CheckBoxList ID="CheckBoxList1" runat="server"   OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged" CssClass="checkbox"></asp:CheckBoxList><br /><br />
+                   </div>
                  <hr />
+				
                  <asp:Label ID="Label4" runat="server" Text="Categoría:"></asp:Label>&nbsp
                  <asp:DropDownList ID="DropDownList2" runat="server" ></asp:DropDownList><br />
                  <hr /><br />
@@ -87,4 +91,5 @@
   
     </div>
     <br /><br />
+	</div>
 </asp:Content>
