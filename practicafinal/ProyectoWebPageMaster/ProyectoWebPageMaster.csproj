@@ -156,6 +156,7 @@
     <Content Include="recursos\css\estilocards.css" />
     <Content Include="recursos\css\estiloiniciarsesion.css" />
     <Content Include="recursos\css\estilosCapitulo.css" />
+    <Content Include="recursos\css\ESTILOSCROLL.css" />
     <Content Include="recursos\css\font-awesome.min.css" />
     <Content Include="recursos\css\ihover.css" />
     <Content Include="recursos\css\jquery-confirm.css" />
@@ -2060,6 +2061,7 @@
     <Compile Include="BO\UsuariosBO.cs" />
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
+    <Compile Include="DAO\crearhistorias_DAO.cs" />
     <Compile Include="DAO\estadosDAO.cs" />
     <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
