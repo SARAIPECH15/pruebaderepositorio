@@ -2055,6 +2055,8 @@
     <Compile Include="BO\estadosBO.cs" />
     <Compile Include="BO\ESTATUS_BO.cs" />
     <Compile Include="BO\GENERO_BO.cs" />
+    <Compile Include="BO\Genero_Historia.cs" />
+    <Compile Include="BO\HistoriasBO.cs" />
     <Compile Include="BO\pais_BO.cs" />
     <Compile Include="BO\registro_boo.cs" />
     <Compile Include="BO\tipousuariosBO.cs" />

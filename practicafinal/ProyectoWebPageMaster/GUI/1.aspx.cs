@@ -56,6 +56,7 @@ namespace ProyectoWebPageMaster.GUI
 				if (tipo1 == 1)
 				{
 					Response.Redirect("../GUI/tiposdeusuariosABCnew.aspx");
+
 				}
 				else
 				{

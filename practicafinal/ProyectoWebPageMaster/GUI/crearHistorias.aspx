@@ -20,7 +20,7 @@
 
     </script>
 
-
+    
 
 
 
@@ -79,8 +79,9 @@
                     <span class="icon text-white-50">
                       <i class="fas fa-check"></i>
                     </span>
-                    <span class="text">Siguiente paso</span>
+                    <span class="text" id="btn_Guardar">Siguiente paso</span>
                   </a>
+                     <asp:Button ID="btnGuardar2" runat="server" Text="Guardar" OnClick="btnGuardar2_Click" />
             </div>
           </div>
 

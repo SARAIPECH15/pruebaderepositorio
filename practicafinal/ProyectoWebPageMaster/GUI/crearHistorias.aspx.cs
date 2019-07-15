@@ -12,6 +12,12 @@ namespace ProyectoWebPageMaster.GUI
 {
     public partial class crearHistorias : System.Web.UI.Page
     {
+
+        crearhistorias_DAO cmd = new crearhistorias_DAO();
+        Genero_Historia cmd2 = new Genero_Historia();
+        historias objhistoriadao = new historias();
+        HistoriasBO objhistoriabo = new HistoriasBO();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 			if (!IsPostBack)
@@ -31,7 +37,7 @@ namespace ProyectoWebPageMaster.GUI
 			CheckBoxList1.DataTextField = "NOMBRE";
 			CheckBoxList1.DataValueField = "CODIGO_GEN";
 			CheckBoxList1.DataBind();
-			CheckBoxList1.Items.Insert(0, new ListItem("Seleccionar", "0"));
+			//CheckBoxList1.Items.Insert(0, new ListItem("Seleccionar", "0"));
 
 
 		}
@@ -54,5 +60,27 @@ namespace ProyectoWebPageMaster.GUI
 		{
 
 		}
-	}
+
+       
+
+        protected void btnGuardar2_Click(object sender, EventArgs e)
+        {
+
+
+
+            foreach (ListItem listacursos in CheckBoxList1.Items)
+            {
+
+                if (listacursos.Selected == true)
+                {
+
+                    string idgenero = listacursos.Value.ToString();
+                    cmd2.Codigo_genero = Convert.ToInt32(idgenero);
+                    cmd2.Codigo_historia = 1;
+                    cmd.agregarGeneroHistoria(cmd2);
+                }
+                
+            }
+        }
+    }
 }
