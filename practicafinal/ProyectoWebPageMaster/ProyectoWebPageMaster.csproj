@@ -103,6 +103,7 @@
     <Content Include="GUI\Humor.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
+    <Content Include="GUI\misHistorias.aspx" />
     <Content Include="GUI\pais.aspx" />
     <Content Include="GUI\paisABC.aspx" />
     <Content Include="GUI\perfil.aspx" />
@@ -2232,6 +2233,13 @@
     <Compile Include="GUI\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\misHistorias.aspx.cs">
+      <DependentUpon>misHistorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\misHistorias.aspx.designer.cs">
+      <DependentUpon>misHistorias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\pais.aspx.cs">
       <DependentUpon>pais.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2649,6 +2657,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="recursos\fotos_portadasLibros\" />
     <Folder Include="recursos\fotos_usuarios\" />
   </ItemGroup>
   <PropertyGroup>

@@ -3,7 +3,7 @@
 
 	<link rel="icon" type="image/png" href="../images3/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../vendor3/bootstrap/css/bootstrap.min.css">
+
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../fonts3/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -21,7 +21,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../css3/util.css">
 	<link rel="stylesheet" type="text/css" href="../css3/main.css">
-
+    
 
 
 
@@ -95,12 +95,11 @@
 
 
 
-	<script src="../vendor3/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="../vendor3/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
 	<script src="../vendor3/bootstrap/js/popper.js"></script>
-	<script src="../vendor3/bootstrap/js/bootstrap.min.js"></script>
+
 <!--===============================================================================================-->
 	<script src="../vendor3/select2/select2.min.js"></script>
 <!--===============================================================================================-->
