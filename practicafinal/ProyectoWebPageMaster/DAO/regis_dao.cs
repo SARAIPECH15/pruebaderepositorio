@@ -23,7 +23,7 @@ namespace ProyectoWebPageMaster.DAO
 
 			//LLAMA AL CIMANDO PORQUE ES UN INSERT
 
-			int id = objConectar.EjecutarComando("INSERT INTO USUARIO (FOTO,USUARIO,CONTRASENIA,NOMBRE,APELLIDO,DIRECCION,ID_TIPOUSUARIO, COD_PAIS,COD_CIU,Email) output INSERTED.ID_US values('" + objusuario.Fotoperfil + "','" + objusuario.Usuario + "','" + objusuario.Comtrasena + "','" + objusuario.Nombre + "','" + objusuario.Apeliido + "','" + objusuario.Direccion + "','" + objusuario.Id_tipous + "','" + objusuario.Cod_pais + "','" + objusuario.Cod_ciu + "','" + objusuario.Email + "')");
+			int id = objConectar.EjecutarComando("INSERT INTO USUARIO (FOTO,USUARIO,CONTRASEÑA,NOMBRE,APELLIDO,DIRECCION,ID_TIPOUSUARIO, COD_PAIS,COD_CIU,Email) output INSERTED.ID_US values('" + objusuario.Fotoperfil + "','" + objusuario.Usuario + "','" + objusuario.Comtrasena + "','" + objusuario.Nombre + "','" + objusuario.Apeliido + "','" + objusuario.Direccion + "','" + objusuario.Id_tipous + "','" + objusuario.Cod_pais + "','" + objusuario.Cod_ciu + "','" + objusuario.Email + "')");
 			return id;
 
 		}
@@ -55,7 +55,7 @@ namespace ProyectoWebPageMaster.DAO
 			DataSet datos = objConectar.EjecutarSentencia("select * from usuario where ID_US=" + objbo.Id);
 			objbo.Email = datos.Tables[0].Rows[0]["Email"].ToString();
 			objbo.Nombre = datos.Tables[0].Rows[0]["NOMBRE"].ToString();
-			objbo.Comtrasena = datos.Tables[0].Rows[0]["CONTRASENIA"].ToString();
+			objbo.Comtrasena = datos.Tables[0].Rows[0]["CONTRASEÑA"].ToString();
 			objbo.Usuario = datos.Tables[0].Rows[0]["USUARIO"].ToString();
 			objbo.Fotoperfil = datos.Tables[0].Rows[0]["FOTO"].ToString();
 
@@ -72,7 +72,7 @@ namespace ProyectoWebPageMaster.DAO
 
         public int modificarusuario(registro_boo objusuario)
         {
-            int id = objConectar.EjecutarComando(string.Format("update usuario set NOMBRE='{0}',Email='{1}',USUARIO='{2}',CONTRASENIA='{3}',FOTO='{4}',APELLIDO='{5}',DIRECCION='{6}',COD_PAIS={7},COD_CIU={8},ID_TIPOUSUARIO={9} where ID_US={10}", objusuario.Nombre, objusuario.Email, objusuario.Usuario,objusuario.Comtrasena,objusuario.Fotoperfil, objusuario.Apeliido, objusuario.Direccion,objusuario.Cod_pais,objusuario.Cod_ciu,objusuario.Id_tipous, objusuario.Id));
+            int id = objConectar.EjecutarComando(string.Format("update usuario set NOMBRE='{0}',Email='{1}',USUARIO='{2}',CONTRASEÑA='{3}',FOTO='{4}',APELLIDO='{5}',DIRECCION='{6}',COD_PAIS={7},COD_CIU={8},ID_TIPOUSUARIO={9} where ID_US={10}", objusuario.Nombre, objusuario.Email, objusuario.Usuario,objusuario.Comtrasena,objusuario.Fotoperfil, objusuario.Apeliido, objusuario.Direccion,objusuario.Cod_pais,objusuario.Cod_ciu,objusuario.Id_tipous, objusuario.Id));
             return 1;
         }
 

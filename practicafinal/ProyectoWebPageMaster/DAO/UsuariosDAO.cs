@@ -15,7 +15,7 @@ namespace ProyectoWebPageMaster.DAO
 
         public int verificar_login(UsuariosBO objbo)
         {
-            DataSet datos = objConectar.EjecutarSentencia("select ID_US from USUARIO where USUARIO='" + objbo.Usuario + "' and CONTRASENIA='" + objbo.Contrasenia + "'");
+            DataSet datos = objConectar.EjecutarSentencia("select ID_US from USUARIO where USUARIO='" + objbo.Usuario + "' and CONTRASEÑA='" + objbo.Contrasenia + "'");
             int id = 0;
 
             if (datos.Tables[0].Rows.Count > 0)
@@ -31,7 +31,7 @@ namespace ProyectoWebPageMaster.DAO
             DataSet datos = objConectar.EjecutarSentencia("select * from USUARIO where ID_US=" + objbo.Id_us);
             
             objbo.Nombre = datos.Tables[0].Rows[0]["NOMBRE"].ToString();
-            objbo.Contrasenia = datos.Tables[0].Rows[0]["CONTRASENIA"].ToString();
+            objbo.Contrasenia = datos.Tables[0].Rows[0]["CONTRASEÑA"].ToString();
             objbo.Usuario = datos.Tables[0].Rows[0]["USUARIO"].ToString();
 			objbo.Id_tipousuario =int.Parse(datos.Tables[0].Rows[0]["ID_TIPOUSUARIO"].ToString());
 
