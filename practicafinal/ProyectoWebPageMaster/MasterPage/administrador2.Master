@@ -9,6 +9,7 @@
 
     <link href="../recursos/css/bootstrap.css" rel="stylesheet" />
         <link href="../recursos/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../recursos/css/estiloslist.css" rel="stylesheet" />
      <script src="../recursos/js/jquery-3.4.1.min.js"></script>
     <script src="../recursos/js/bootstrap.js"></script>
 
@@ -96,6 +97,23 @@
         </div>
       </li>
 
+
+		 <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>Autorizaciones</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Informes:</h6>
+            <a class="collapse-item" href="aceptarhistorias.aspx">Libros Pendientes</a>
+            <a class="collapse-item" href="ClasificacionABC.aspx">Capitulos Pendientes</a>
+            <a class="collapse-item" href="EstatusABC.aspx"></a>
+            <a class="collapse-item" href="utilities-other.html">Libros publicados</a>
+          </div>
+        </div>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
 
