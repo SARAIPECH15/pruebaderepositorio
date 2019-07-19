@@ -102,6 +102,7 @@
     <Content Include="GUI\home.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
+    <Content Include="GUI\misHistorias.aspx" />
     <Content Include="GUI\pais.aspx" />
     <Content Include="GUI\paisABC.aspx" />
     <Content Include="GUI\perfil.aspx" />
@@ -322,6 +323,7 @@
     <Content Include="recursos\js\popper.min.js" />
     <Content Include="recursos\js\smoothscroll.js" />
     <Content Include="recursos\js\theme.js" />
+    <Content Include="recursos\README_LOGO\Read.me Logo.png" />
     <Content Include="recursos\vendors\circle-bar\circle-progress.min.js" />
     <Content Include="recursos\vendors\circle-bar\plugins.js" />
     <Content Include="recursos\vendors\counterup\apear.js" />
@@ -2226,6 +2228,13 @@
     <Compile Include="GUI\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\misHistorias.aspx.cs">
+      <DependentUpon>misHistorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\misHistorias.aspx.designer.cs">
+      <DependentUpon>misHistorias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\pais.aspx.cs">
       <DependentUpon>pais.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2643,6 +2652,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="recursos\fotos_portadasLibros\" />
     <Folder Include="recursos\fotos_usuarios\" />
   </ItemGroup>
   <PropertyGroup>

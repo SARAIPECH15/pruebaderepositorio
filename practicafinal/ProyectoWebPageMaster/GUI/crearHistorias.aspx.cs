@@ -6,7 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using ProyectoWebPageMaster.BO;
 using ProyectoWebPageMaster.DAO;
-
+using System.IO;
+using System.Drawing.Imaging;
+using System.Drawing;
 
 namespace ProyectoWebPageMaster.GUI
 {
@@ -30,6 +32,33 @@ namespace ProyectoWebPageMaster.GUI
 
 
 		regis_dao ObjgenDAO = new regis_dao();
+
+
+        public void limpiarControles()
+        {
+
+        }
+
+       
+
+        public void LlenarBo()
+        {
+            objhistoriabo.Nombre=txtTitulo.Text;
+            objhistoriabo.Idautor= Convert.ToInt32(Session["ID_US"]);
+            objhistoriabo.Codigo_cat = Convert.ToInt32(DropDownList2.SelectedValue);
+            objhistoriabo.Prologo = txtprologo.Value;
+
+
+        }
+
+        public void LimpiarControles()
+        {
+
+        }
+
+
+
+
 		private void llenadoCheklistgenero()
 		{
 
@@ -66,18 +95,96 @@ namespace ProyectoWebPageMaster.GUI
         protected void btnGuardar2_Click(object sender, EventArgs e)
         {
 
+            LlenarBo();
+           // int idHistoria;
+          //  cmd2.Codigo_historia = cmd.agregarHistoria(objhistoriabo);
+
+            if (Fu_perfil.HasFile)
+            {
+                //validar extensiones aceptadas
+                //OBTIENE LA EXTENSION DEL ARCHIVO
+                String fileExtension = Path.GetExtension(Fu_perfil.FileName).ToLower();
+
+                //ARREGLO TIPO STRING DE EXTENSIONES.
+                String[] Exten_validas = { ".png", ".jpeg", ".jpg" };
+                for (int i = 0; i < Exten_validas.Length; i++)
+                {
+                    //si la extensión es alguna de las válidas
+                    if (fileExtension == Exten_validas[i])
+                    {
+                        System.Drawing.Image ObjetoImagen;
+                        string NombreArchivoPequenio = "_" + Path.GetFileName(Fu_perfil.PostedFile.FileName.Replace("_", ""));
+
+                        objhistoriabo.Foto = NombreArchivoPequenio;
+                        //agrega a la base de datos
+                        objhistoriabo.Codig_his = cmd.agregarHistoria(objhistoriabo);
+
+                        string RutaImagenes = "~/recursos/fotos_portadasLibros/";
+                        Bitmap ImagenEnBinario = new Bitmap(Fu_perfil.PostedFile.InputStream);
+                        ObjetoImagen = objhistoriabo.RedimencionarImagen(ImagenEnBinario, 100);
+                        switch (fileExtension)
+                        {
+                            case ".png":
+                                ObjetoImagen.Save(Server.MapPath(RutaImagenes) + objhistoriabo.Codig_his + NombreArchivoPequenio, ImageFormat.Png);
+
+                                break;
+                            case ".jpg":
+                                ObjetoImagen.Save(Server.MapPath(RutaImagenes) + objhistoriabo.Codig_his + NombreArchivoPequenio, ImageFormat.Jpeg);
+                                break;
+                            case ".jpeg":
+                                ObjetoImagen.Save(Server.MapPath(RutaImagenes) + objhistoriabo.Codig_his + NombreArchivoPequenio, ImageFormat.Jpeg);
+                                break;
+                        }
+
+
+                    }
+                }
+
+            }
+            else
+            {
+                objhistoriabo.Foto = "";
+                objhistoriabo.Codig_his = cmd.agregarHistoria(objhistoriabo);
+
+
+            }
+
+            //EL SCRIPT DE ALERTA
+
+            string scriptjs = @"<script type='text/javascript'>
+                            $.alert({
+                        title: 'Alert!',
+                 content: 'Datos agregados correctamente!',
+              });
+            </script>";
+
+            //ESTE LO EJECUTA
+
+
+
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", scriptjs, false);
+            LimpiarControles();
+
+
+
+
+
+
 
 
             foreach (ListItem listacursos in CheckBoxList1.Items)
             {
+
 
                 if (listacursos.Selected == true)
                 {
 
                     string idgenero = listacursos.Value.ToString();
                     cmd2.Codigo_genero = Convert.ToInt32(idgenero);
-                    cmd2.Codigo_historia = 1;
+                    cmd2.Codigo_historia = objhistoriabo.Codig_his;
                     cmd.agregarGeneroHistoria(cmd2);
+
+
                 }
                 
             }

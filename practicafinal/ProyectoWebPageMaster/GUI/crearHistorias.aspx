@@ -1,10 +1,33 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Site1.Master" AutoEventWireup="true" CodeBehind="crearHistorias.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.crearHistorias" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+
+    <script src="../recursos/js/jquery-3.4.1.min.js"></script>
+    
+         <script>
+             function cambiar_nombre() {
+                 var fileName = $("#<%=Fu_perfil.ClientID%>").val();
+              $("#<%=Fu_perfil.ClientID%>").next('.custom-file-label').html(fileName);
+
+
+
+
+
+             }
+	   </script>
+
+
+
+
+
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <link href="../recursos/css/estilosCapitulo.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+
     <script type="text/javascript">
           function ImagePreview(input) {
             if (input.files && input.files[0]) {
@@ -25,7 +48,7 @@
 
 
      <!--================Banner Area =================-->
-        <section class="banner_area">99
+        <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
                     <h2>Crear Historias</h2>
@@ -45,11 +68,13 @@
                <asp:Image ID="Image1" runat="server" src="../recursos/img/sinimagen.png" Height="360px" Width="286px"/><br />
              <div class="card-body">
               <div class="custom-file">
-      <asp:FileUpload CssClass="custom-file-input" ID="Fu_perfil" runat="server" onchange="ImagePreview(this); "  Visible="true"></asp:FileUpload> <asp:Label ID="Label10" runat="server" Text="Foto de portada:" for="customFile"   CssClass="custom-file-label"  data-browse="Examinar"></asp:Label>
+      <asp:FileUpload CssClass="custom-file-input" ID="Fu_perfil" runat="server" onchange="ImagePreview(this); javascript:cambiar_nombre() "  Visible="true"></asp:FileUpload> <asp:Label ID="Label10" runat="server" Text="Foto de portada:" for="customFile"   CssClass="custom-file-label"  data-browse="Examinar"></asp:Label>
                     </div><br /><br />
                  
                  </div>
                   </div>
+
+
 
         </div>
         <div class="col-md-7">
@@ -62,7 +87,7 @@
                  <asp:TextBox ID="txtTitulo" runat="server" Width="705px" CssClass="form-control"></asp:TextBox><br /><br />
                  <hr />
                  <asp:Label ID="Label2" runat="server" Text="Descripción:"></asp:Label><br />
-                 <textarea id="TextArea1" cols="130" rows="2" class="form-control"></textarea><br /><br />
+                 <textarea id="txtprologo" cols="130" rows="2" class="form-control" runat="server"></textarea><br /><br />
                  <hr />
 				 <div class="form-check">
 					 <div Class="CheckBoxList1 checkbox checkbox-primary ">

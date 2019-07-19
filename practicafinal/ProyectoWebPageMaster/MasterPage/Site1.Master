@@ -120,7 +120,7 @@
          <!--================Header Menu Area =================-->
         <header class="main_menu_area">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="../recursos/img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><!--<img src="../recursos/README_LOGO/Read.me%20Logo.png"alt="" width="100" height="100">----></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -154,7 +154,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="nav-item"><a class="nav-link" href="../GUI/CrearHistorias.aspx">Crear Historias</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../GUI/historias.aspx">Ver Historias</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/misHistorias.aspx">Ver Historias</a></li>
                                
                             </ul>
                         </li>

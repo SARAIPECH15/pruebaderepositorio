@@ -23,7 +23,7 @@ namespace ProyectoWebPageMaster.DAO
 
 			//LLAMA AL CIMANDO PORQUE ES UN INSERT
 
-			int id = objConectar.EjecutarComando("INSERT INTO USUARIO (FOTO,USUARIO,CONTRASEÑA,NOMBRE,APELLIDO,DIRECCION,ID_TIPOUSUARIO, COD_PAIS,COD_CIU,Email) output INSERTED.ID_US values('" + objusuario.Fotoperfil + "','" + objusuario.Usuario + "','" + objusuario.Comtrasena + "','" + objusuario.Nombre + "','" + objusuario.Apeliido + "','" + objusuario.Direccion + "','" + objusuario.Id_tipous + "','" + objusuario.Cod_pais + "','" + objusuario.Cod_ciu + "','" + objusuario.Email + "')");
+			int id = objConectar.EjecutarComando("INSERT INTO USUARIO (FOTO,USUARIO,CONTRASENIA,NOMBRE,APELLIDO,DIRECCION,ID_TIPOUSUARIO, COD_PAIS,COD_CIU,Email) output INSERTED.ID_US values('" + objusuario.Fotoperfil + "','" + objusuario.Usuario + "','" + objusuario.Comtrasena + "','" + objusuario.Nombre + "','" + objusuario.Apeliido + "','" + objusuario.Direccion + "','" + objusuario.Id_tipous + "','" + objusuario.Cod_pais + "','" + objusuario.Cod_ciu + "','" + objusuario.Email + "')");
 			return id;
 
 		}
