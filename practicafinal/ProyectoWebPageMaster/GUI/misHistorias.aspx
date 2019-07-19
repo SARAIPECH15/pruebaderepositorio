@@ -28,7 +28,7 @@
     <div class="card-header">
     Todas mis Historias
     </div>
-     <div class="card-body">
+     <div class="card-body text-center">
    
 
          <asp:ListView ID="lstfotos" runat="server" GroupItemCount="1">
@@ -36,23 +36,28 @@
                <ItemTemplate>
 
                    <div class="card mb-3" style="max-width: 540px;">
+          
+             
                   <div class="row no-gutters">
                   <div class="col-md-4">
-                  <asp:Image ID="Image1" runat="server" CssClass="card-img" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS") + Eval("FOTO") %>' />
+                  <asp:Image ID="Image1" runat="server" Width="190px" Height="240px" CssClass="card-img" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS") + Eval("FOTO") %>' />
             <!--     <img src="..." class="card-img" alt="...">  -->
+                      
                   </div>
                   <div class="col-md-8">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                <h5 class="card-title"><%# Eval("NOMBRE") %></h5>  
+                  <p class="card-text"><%# Eval("PROLOGO") %></p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                  </div>
                 </div>
                </div>
               </div>
+                
+    </div>
 
-
-
+                   
 
 
                 </ItemTemplate>
