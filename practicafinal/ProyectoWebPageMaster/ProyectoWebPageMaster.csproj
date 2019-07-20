@@ -174,6 +174,7 @@
     <Content Include="recursos\css\custom.css" />
     <Content Include="recursos\css\font-awesome.css" />
     <Content Include="recursos\Estilos_Login.css" />
+    <Content Include="recursos\estilos_mishistorias.css" />
     <Content Include="recursos\fonts2\glyphicons-halflings-regular.svg" />
     <Content Include="recursos\fonts2\Material-Design-Iconic-Font.svg" />
     <Content Include="recursos\fonts2\robotocondensed-light.svg" />
