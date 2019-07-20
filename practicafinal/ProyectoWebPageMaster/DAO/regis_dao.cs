@@ -58,8 +58,10 @@ namespace ProyectoWebPageMaster.DAO
 			objbo.Comtrasena = datos.Tables[0].Rows[0]["CONTRASENIA"].ToString();
 			objbo.Usuario = datos.Tables[0].Rows[0]["USUARIO"].ToString();
 			objbo.Fotoperfil = datos.Tables[0].Rows[0]["FOTO"].ToString();
+            objbo.Direccion = datos.Tables[0].Rows[0]["DIRECCION"].ToString();
+            objbo.Apeliido = datos.Tables[0].Rows[0]["APELLIDO"].ToString();
 
-		}
+        }
 
 
         public DataSet buscar_usuarios()

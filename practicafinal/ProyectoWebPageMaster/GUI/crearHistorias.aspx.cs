@@ -188,6 +188,9 @@ namespace ProyectoWebPageMaster.GUI
                 }
                 
             }
+
+            Response.Redirect("../GUI/CrearCapitulo.aspx");
+
         }
     }
 }

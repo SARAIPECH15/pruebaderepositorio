@@ -92,6 +92,7 @@
     <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
+    <Content Include="GUI\EditarPerfil.aspx" />
     <Content Include="GUI\Espiritual.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
@@ -2156,6 +2157,13 @@
     </Compile>
     <Compile Include="GUI\crearHistorias.aspx.designer.cs">
       <DependentUpon>crearHistorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Espiritual.aspx.cs">
       <DependentUpon>Espiritual.aspx</DependentUpon>
