@@ -85,14 +85,15 @@
     <Content Include="GUI\abcestatus.aspx" />
     <Content Include="GUI\abcGenero.aspx" />
     <Content Include="GUI\abcTipousuarios2new.aspx" />
-    <Content Include="GUI\aceptarhistorias.aspx" />
     <Content Include="GUI\acercaDe.aspx" />
     <Content Include="GUI\Administrador.aspx" />
+    <Content Include="GUI\Aventura.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
-    <Content Include="GUI\detalles.aspx" />
+    <Content Include="GUI\EditarPerfil.aspx" />
+    <Content Include="GUI\Espiritual.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
@@ -100,6 +101,7 @@
     <Content Include="GUI\GenerosABC.aspx" />
     <Content Include="GUI\historias.aspx" />
     <Content Include="GUI\home.aspx" />
+    <Content Include="GUI\Humor.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
     <Content Include="GUI\misHistorias.aspx" />
@@ -157,7 +159,6 @@
     <Content Include="recursos\css\estiloiniciarsesion.css" />
     <Content Include="recursos\css\estilosCapitulo.css" />
     <Content Include="recursos\css\ESTILOSCROLL.css" />
-    <Content Include="recursos\css\estiloslist.css" />
     <Content Include="recursos\css\font-awesome.min.css" />
     <Content Include="recursos\css\ihover.css" />
     <Content Include="recursos\css\jquery-confirm.css" />
@@ -173,6 +174,7 @@
     <Content Include="recursos\css\custom.css" />
     <Content Include="recursos\css\font-awesome.css" />
     <Content Include="recursos\Estilos_Login.css" />
+    <Content Include="recursos\estilos_mishistorias.css" />
     <Content Include="recursos\fonts2\glyphicons-halflings-regular.svg" />
     <Content Include="recursos\fonts2\Material-Design-Iconic-Font.svg" />
     <Content Include="recursos\fonts2\robotocondensed-light.svg" />
@@ -2069,7 +2071,6 @@
     <Compile Include="DAO\estadosDAO.cs" />
     <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
-    <Compile Include="DAO\listview_ACEPTARHIS.cs" />
     <Compile Include="DAO\PaisDAO.cs" />
     <Compile Include="DAO\regis_dao.cs" />
     <Compile Include="DAO\tipousuariosDAO.cs" />
@@ -2109,13 +2110,6 @@
     <Compile Include="GUI\abcTipousuarios2new.aspx.designer.cs">
       <DependentUpon>abcTipousuarios2new.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\aceptarhistorias.aspx.cs">
-      <DependentUpon>aceptarhistorias.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\aceptarhistorias.aspx.designer.cs">
-      <DependentUpon>aceptarhistorias.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GUI\acercaDe.aspx.cs">
       <DependentUpon>acercaDe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2129,6 +2123,13 @@
     </Compile>
     <Compile Include="GUI\Administrador.aspx.designer.cs">
       <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Aventura.aspx.cs">
+      <DependentUpon>Aventura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Aventura.aspx.designer.cs">
+      <DependentUpon>Aventura.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Ciencia_Ficcion.aspx.cs">
       <DependentUpon>Ciencia_Ficcion.aspx</DependentUpon>
@@ -2158,12 +2159,19 @@
     <Compile Include="GUI\crearHistorias.aspx.designer.cs">
       <DependentUpon>crearHistorias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\detalles.aspx.cs">
-      <DependentUpon>detalles.aspx</DependentUpon>
+    <Compile Include="GUI\EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\detalles.aspx.designer.cs">
-      <DependentUpon>detalles.aspx</DependentUpon>
+    <Compile Include="GUI\EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Espiritual.aspx.cs">
+      <DependentUpon>Espiritual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Espiritual.aspx.designer.cs">
+      <DependentUpon>Espiritual.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\estadosABCnew.aspx.cs">
       <DependentUpon>estadosABCnew.aspx</DependentUpon>
@@ -2213,6 +2221,13 @@
     </Compile>
     <Compile Include="GUI\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Humor.aspx.cs">
+      <DependentUpon>Humor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Humor.aspx.designer.cs">
+      <DependentUpon>Humor.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
