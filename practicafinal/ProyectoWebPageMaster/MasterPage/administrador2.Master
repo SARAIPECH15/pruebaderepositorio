@@ -109,7 +109,7 @@
             <h6 class="collapse-header">Informes:</h6>
             <a class="collapse-item" href="aceptarhistorias.aspx">Libros Pendientes</a>
             <a class="collapse-item" href="ClasificacionABC.aspx">Capitulos Pendientes</a>
-            <a class="collapse-item" href="Estadistica_Admin.aspx">Estadisticas</a>
+            <a class="collapse-item" href="EstatusABC.aspx"></a>
             <a class="collapse-item" href="utilities-other.html">Libros publicados</a>
           </div>
         </div>
@@ -350,14 +350,10 @@
 
                   Cerrar Sesión
 
-                  <asp:LinkButton ID="btncerrarsesion" runat="server" CssClass="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" OnClick="btncerrarsesion_Click">Cerrar Sesión</asp:LinkButton>
+                  
 
                 </a>
               </div>
-                
-
-
-
             </li>
 
           </ul>
