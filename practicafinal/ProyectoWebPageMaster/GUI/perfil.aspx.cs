@@ -36,5 +36,10 @@ namespace ProyectoWebPageMaster.GUI
 
 
         }
+
+        protected void btnEditarPerfil_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../GUI/EditarPerfil.aspx");
+        }
     }
 }
