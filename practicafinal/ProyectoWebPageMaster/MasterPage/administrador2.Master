@@ -109,8 +109,8 @@
             <h6 class="collapse-header">Informes:</h6>
             <a class="collapse-item" href="aceptarhistorias.aspx">Libros Pendientes</a>
             <a class="collapse-item" href="ClasificacionABC.aspx">Capitulos Pendientes</a>
-            <a class="collapse-item" href="Estadisticas_Libros_Admin_GUI.apsx">Estadisticas</a>
-            <a class="collapse-item" href="Estadisticas_Libros_Admin_GUI.apsx">Libros publicados</a>
+            <a class="collapse-item" href="Estadistica_Admin.aspx">Estadisticas</a>
+            <a class="collapse-item" href="utilities-other.html">Libros publicados</a>
           </div>
         </div>
       </li>

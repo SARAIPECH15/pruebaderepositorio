@@ -85,14 +85,14 @@
     <Content Include="GUI\abcestatus.aspx" />
     <Content Include="GUI\abcGenero.aspx" />
     <Content Include="GUI\abcTipousuarios2new.aspx" />
+    <Content Include="GUI\aceptarhistorias.aspx" />
     <Content Include="GUI\acercaDe.aspx" />
     <Content Include="GUI\Administrador.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
-    <Content Include="GUI\EditarPerfil.aspx" />
-    <Content Include="GUI\Estadisticas_Libros_Admin_GUI.aspx" />
+    <Content Include="GUI\detalles.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
@@ -113,6 +113,7 @@
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
     <Content Include="GUI\tiposdeusuariosABCnew.aspx" />
     <Content Include="GUI\UsuariosABC.aspx" />
+    <Content Include="GUI\Estadistica_Admin.aspx" />
     <Content Include="images3\bg-01.jpg" />
     <Content Include="images3\icons\favicon.ico" />
     <Content Include="images3\icons\icon-google.png" />
@@ -157,6 +158,7 @@
     <Content Include="recursos\css\estiloiniciarsesion.css" />
     <Content Include="recursos\css\estilosCapitulo.css" />
     <Content Include="recursos\css\ESTILOSCROLL.css" />
+    <Content Include="recursos\css\estiloslist.css" />
     <Content Include="recursos\css\font-awesome.min.css" />
     <Content Include="recursos\css\ihover.css" />
     <Content Include="recursos\css\jquery-confirm.css" />
@@ -172,7 +174,6 @@
     <Content Include="recursos\css\custom.css" />
     <Content Include="recursos\css\font-awesome.css" />
     <Content Include="recursos\Estilos_Login.css" />
-    <Content Include="recursos\estilos_mishistorias.css" />
     <Content Include="recursos\fonts2\glyphicons-halflings-regular.svg" />
     <Content Include="recursos\fonts2\Material-Design-Iconic-Font.svg" />
     <Content Include="recursos\fonts2\robotocondensed-light.svg" />
@@ -2069,6 +2070,7 @@
     <Compile Include="DAO\estadosDAO.cs" />
     <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
+    <Compile Include="DAO\listview_ACEPTARHIS.cs" />
     <Compile Include="DAO\PaisDAO.cs" />
     <Compile Include="DAO\regis_dao.cs" />
     <Compile Include="DAO\tipousuariosDAO.cs" />
@@ -2107,6 +2109,13 @@
     </Compile>
     <Compile Include="GUI\abcTipousuarios2new.aspx.designer.cs">
       <DependentUpon>abcTipousuarios2new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\aceptarhistorias.aspx.cs">
+      <DependentUpon>aceptarhistorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\aceptarhistorias.aspx.designer.cs">
+      <DependentUpon>aceptarhistorias.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\acercaDe.aspx.cs">
       <DependentUpon>acercaDe.aspx</DependentUpon>
@@ -2150,19 +2159,12 @@
     <Compile Include="GUI\crearHistorias.aspx.designer.cs">
       <DependentUpon>crearHistorias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\EditarPerfil.aspx.cs">
-      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+    <Compile Include="GUI\detalles.aspx.cs">
+      <DependentUpon>detalles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\EditarPerfil.aspx.designer.cs">
-      <DependentUpon>EditarPerfil.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Estadisticas_Libros_Admin_GUI.aspx.cs">
-      <DependentUpon>Estadisticas_Libros_Admin_GUI.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Estadisticas_Libros_Admin_GUI.aspx.designer.cs">
-      <DependentUpon>Estadisticas_Libros_Admin_GUI.aspx</DependentUpon>
+    <Compile Include="GUI\detalles.aspx.designer.cs">
+      <DependentUpon>detalles.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\estadosABCnew.aspx.cs">
       <DependentUpon>estadosABCnew.aspx</DependentUpon>
@@ -2303,6 +2305,13 @@
     </Compile>
     <Compile Include="GUI\UsuariosABC.aspx.designer.cs">
       <DependentUpon>UsuariosABC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estadistica_Admin.aspx.cs">
+      <DependentUpon>Estadistica_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Estadistica_Admin.aspx.designer.cs">
+      <DependentUpon>Estadistica_Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\administrador.Master.cs">
       <DependentUpon>administrador.Master</DependentUpon>

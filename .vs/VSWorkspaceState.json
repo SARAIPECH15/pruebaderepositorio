@@ -3,9 +3,9 @@
     "",
     "\\practicafinal",
     "\\practicafinal\\ProyectoWebPageMaster",
-    "\\practicafinal\\ProyectoWebPageMaster\\DAO",
+    "\\practicafinal\\ProyectoWebPageMaster\\BO",
     "\\practicafinal\\ProyectoWebPageMaster\\GUI"
   ],
-  "SelectedNode": "\\practicafinal\\ProyectoWebPageMaster\\BO",
+  "SelectedNode": "\\practicafinal\\ProyectoWebPageMaster\\GUI\\crearHistorias.aspx",
   "PreviewInSolutionExplorer": false
 }

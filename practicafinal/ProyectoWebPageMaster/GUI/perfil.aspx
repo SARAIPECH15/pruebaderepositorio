@@ -45,18 +45,12 @@
   <li class="nav-item">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Estadisticas</a>
   </li>
-            <li>
-
-                 <a href="../GUI/EditarPerfil.aspx" class="btn btn-success btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-check"></i>
-                    </span>
-                    <span class="text" id="btn_Guardar">Editar Perfil</span>
-                  </a>
-            </li>
 
                
-          
+            <li class="pull-right">
+                <button type="button" class="btn btn-outline-primary">Editar Perfil</button>
+        </li> 
+                
 
 
           
