@@ -15,10 +15,13 @@
         <!--================End Banner Area =================-->
     <br /><br />
 
+<<<<<<< HEAD
 
     
     <div class="container-fluid">
 
+=======
+>>>>>>> a7b5d1a85eef19e958e001985c8cf83fdbc54b0f
 
 
     <div class="row">
@@ -95,6 +98,7 @@
     </div>
         <div class="col-md-2"></div>
     </div>
+<<<<<<< HEAD
 
         </div>
  
@@ -104,6 +108,11 @@
 
 
 
+=======
+
+
+
+>>>>>>> a7b5d1a85eef19e958e001985c8cf83fdbc54b0f
 
     <br /><br />
 
