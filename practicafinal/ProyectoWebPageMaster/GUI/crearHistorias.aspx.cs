@@ -33,8 +33,7 @@ namespace ProyectoWebPageMaster.GUI
 
 
 		regis_dao ObjgenDAO = new regis_dao();
-
-
+		
         public void limpiarControles()
         {
 
@@ -189,12 +188,15 @@ namespace ProyectoWebPageMaster.GUI
                 }
                 
             }
+<<<<<<< HEAD
 
             int codigohis;
             codigohis = objhistoriabo.Codig_his;
 
             Response.Redirect("../GUI/CrearCapitulo.aspx?id="+codigohis);
 
+=======
+>>>>>>> c4eeede2b5858aff69654a4f293cef640f2d45d4
         }
     }
 }

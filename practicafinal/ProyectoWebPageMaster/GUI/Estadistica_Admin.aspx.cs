@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ProyectoWebPageMaster.GUI
 {
-    public partial class Humor : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class WebForm1 : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }
