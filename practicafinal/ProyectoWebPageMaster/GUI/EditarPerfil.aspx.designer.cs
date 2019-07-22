@@ -49,6 +49,15 @@ namespace ProyectoWebPageMaster.GUI {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
+        /// Control txtFoto_usuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFoto_usuario;
+        
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -193,12 +202,12 @@ namespace ProyectoWebPageMaster.GUI {
         protected global::System.Web.UI.WebControls.TextBox txt_password;
         
         /// <summary>
-        /// Control Button1.
+        /// Control btnactualizar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnactualizar;
     }
 }

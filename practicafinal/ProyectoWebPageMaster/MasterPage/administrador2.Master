@@ -332,10 +332,14 @@
 
                   Cerrar Sesión
 
-                  
+                  <asp:LinkButton ID="btncerrarsesion" runat="server" CssClass="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" OnClick="btncerrarsesion_Click">Cerrar Sesión</asp:LinkButton>
 
                 </a>
               </div>
+                
+
+
+
             </li>
 
           </ul>

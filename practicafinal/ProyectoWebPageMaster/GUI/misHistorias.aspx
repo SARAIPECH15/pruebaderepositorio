@@ -17,7 +17,7 @@
     <br /><br />
 
     
-
+    <div class="container-fluid">
 
 
     <div class="row">
@@ -80,7 +80,7 @@
     </div>
         </div>
  
-
+        </div>
 
     <br /><br />
 
