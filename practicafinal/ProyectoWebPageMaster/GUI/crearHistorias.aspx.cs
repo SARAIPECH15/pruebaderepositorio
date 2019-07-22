@@ -32,8 +32,7 @@ namespace ProyectoWebPageMaster.GUI
 
 
 		regis_dao ObjgenDAO = new regis_dao();
-
-
+		
         public void limpiarControles()
         {
 
