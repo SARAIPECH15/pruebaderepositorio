@@ -97,6 +97,11 @@ namespace ProyectoWebPageMaster.DAO
 
         }
 
+        public int modificarusuario2(registro_boo objusuario)
+        {
+            int id = objConectar.EjecutarComando(string.Format("update usuario set NOMBRE='{0}',Email='{1}',USUARIO='{2}',CONTRASENIA='{3}',FOTO='{4}',APELLIDO='{5}',DIRECCION='{6}',COD_PAIS={7},COD_CIU={8} where ID_US={9}", objusuario.Nombre, objusuario.Email, objusuario.Usuario, objusuario.Comtrasena, objusuario.Fotoperfil, objusuario.Apeliido, objusuario.Direccion, objusuario.Cod_pais, objusuario.Cod_ciu, objusuario.Id));
+            return 1;
+        }
 
 
 

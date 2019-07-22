@@ -19,6 +19,7 @@ namespace ProyectoWebPageMaster.GUI
         Genero_Historia cmd2 = new Genero_Historia();
         historias objhistoriadao = new historias();
         HistoriasBO objhistoriabo = new HistoriasBO();
+        CapituloBO objcapbo = new CapituloBO();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -182,11 +183,20 @@ namespace ProyectoWebPageMaster.GUI
                     cmd2.Codigo_genero = Convert.ToInt32(idgenero);
                     cmd2.Codigo_historia = objhistoriabo.Codig_his;
                     cmd.agregarGeneroHistoria(cmd2);
-
+                   
 
                 }
                 
             }
+<<<<<<< HEAD
+
+            int codigohis;
+            codigohis = objhistoriabo.Codig_his;
+
+            Response.Redirect("../GUI/CrearCapitulo.aspx?id="+codigohis);
+
+=======
+>>>>>>> c4eeede2b5858aff69654a4f293cef640f2d45d4
         }
     }
 }

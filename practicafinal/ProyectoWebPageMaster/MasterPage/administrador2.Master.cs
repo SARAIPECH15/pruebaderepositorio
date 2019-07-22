@@ -53,7 +53,9 @@ namespace ProyectoWebPageMaster.MasterPage
 
 		}
 
-        
-
-	}
+        protected void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+        }
+    }
 }
