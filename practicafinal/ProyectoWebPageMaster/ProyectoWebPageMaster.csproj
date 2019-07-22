@@ -87,13 +87,12 @@
     <Content Include="GUI\abcTipousuarios2new.aspx" />
     <Content Include="GUI\acercaDe.aspx" />
     <Content Include="GUI\Administrador.aspx" />
-    <Content Include="GUI\Aventura.aspx" />
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
     <Content Include="GUI\EditarPerfil.aspx" />
-    <Content Include="GUI\Espiritual.aspx" />
+    <Content Include="GUI\Estadisticas_Libros_Admin_GUI.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
@@ -101,7 +100,6 @@
     <Content Include="GUI\GenerosABC.aspx" />
     <Content Include="GUI\historias.aspx" />
     <Content Include="GUI\home.aspx" />
-    <Content Include="GUI\Humor.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
     <Content Include="GUI\misHistorias.aspx" />
@@ -2124,13 +2122,6 @@
     <Compile Include="GUI\Administrador.aspx.designer.cs">
       <DependentUpon>Administrador.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Aventura.aspx.cs">
-      <DependentUpon>Aventura.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Aventura.aspx.designer.cs">
-      <DependentUpon>Aventura.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Ciencia_Ficcion.aspx.cs">
       <DependentUpon>Ciencia_Ficcion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2166,12 +2157,12 @@
     <Compile Include="GUI\EditarPerfil.aspx.designer.cs">
       <DependentUpon>EditarPerfil.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Espiritual.aspx.cs">
-      <DependentUpon>Espiritual.aspx</DependentUpon>
+    <Compile Include="GUI\Estadisticas_Libros_Admin_GUI.aspx.cs">
+      <DependentUpon>Estadisticas_Libros_Admin_GUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\Espiritual.aspx.designer.cs">
-      <DependentUpon>Espiritual.aspx</DependentUpon>
+    <Compile Include="GUI\Estadisticas_Libros_Admin_GUI.aspx.designer.cs">
+      <DependentUpon>Estadisticas_Libros_Admin_GUI.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\estadosABCnew.aspx.cs">
       <DependentUpon>estadosABCnew.aspx</DependentUpon>
@@ -2221,13 +2212,6 @@
     </Compile>
     <Compile Include="GUI\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Humor.aspx.cs">
-      <DependentUpon>Humor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Humor.aspx.designer.cs">
-      <DependentUpon>Humor.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
