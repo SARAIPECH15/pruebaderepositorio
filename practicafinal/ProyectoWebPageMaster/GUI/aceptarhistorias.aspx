@@ -54,15 +54,14 @@
 <ItemTemplate>
 
 <div  class="ImageContainer hvr-underline-from-center hvr-shadow" style="cursor:default;">
-	<asp:Image ID="ImgPhoto" runat="server" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS")+"_"+Eval("FOTO")%>' width="250px" heigth="150px" class="img-thumbnail"/>
+	<asp:Image ID="ImgPhoto" runat="server" ImageUrl='<%#"~/recursos/fotos_galeria/"+Eval("CODIG_HIS")+"_"+Eval("FOTO")%>' width="250px" heigth="150px" class="img-thumbnail"/>
 <div class="caption contenedorlistview">
 	
-		
+
 		<h3><%# Eval("NOMBRE")%></h3>
 		<p><%# Eval("PROLOGO")%></p>
-
-
 		<p><a href="detalles.aspx?CODIG_HIS=<%# Eval("CODIG_HIS")%>" class="btn btn-warning" role="button">Ver mas</a>
+
 		</p>
 
 
@@ -78,7 +77,7 @@
 
 </ItemTemplate>
 
-	
+
 
 
 
@@ -93,12 +92,6 @@
 
 
 
-
-
-
-
-
-	
 
 
 
