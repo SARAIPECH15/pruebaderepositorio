@@ -288,24 +288,21 @@ namespace ProyectoWebPageMaster.GUI
         protected void dgv_usuarios_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtid.Text = dgv_usuarios.SelectedRow.Cells[0].Text;
-            Txt_email.Text = HttpUtility.HtmlDecode(dgv_usuarios.SelectedRow.Cells[1].Text);
-            txt_Usuario.Text = HttpUtility.HtmlDecode(dgv_usuarios.SelectedRow.Cells[2].Text);
             txtFoto_usuario.Text = "";
-            if (dgv_usuarios.SelectedRow.Cells[3].Text.Trim() != "")
+            if (dgv_usuarios.SelectedRow.Cells[1].Text.Trim() != "")
             {
                 txtFoto_usuario.Text = dgv_usuarios.SelectedRow.Cells[0].Text + dgv_usuarios.SelectedRow.Cells[1].Text;
             }
-          
-            
-            txt_password.Attributes.Add("value", dgv_usuarios.SelectedRow.Cells[4].Text);
+            txt_Usuario.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[2].Text);
+            txt_password.Attributes.Add("value", dgv_usuarios.SelectedRow.Cells[3].Text);
            
-            txt_nombre.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[5].Text);
-            txt_Apellidos.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[6].Text);
-            txt_Direccion.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[7].Text);
-            DropDownTipousuario.Text = dgv_usuarios.SelectedRow.Cells[8].Text;
-            DropDownPais.Text =HttpUtility.HtmlDecode (dgv_usuarios.SelectedRow.Cells[9].Text);
-            DropDownEstado.Text = dgv_usuarios.SelectedRow.Cells[10].Text;
-           
+            txt_nombre.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[4].Text);
+            txt_Apellidos.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[5].Text);
+            txt_Direccion.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[6].Text);
+            DropDownTipousuario.Text = dgv_usuarios.SelectedRow.Cells[7].Text;
+            DropDownPais.Text =HttpUtility.HtmlDecode (dgv_usuarios.SelectedRow.Cells[8].Text);
+            DropDownEstado.Text = dgv_usuarios.SelectedRow.Cells[9].Text;
+            Txt_email.Text =HttpUtility.HtmlDecode( dgv_usuarios.SelectedRow.Cells[10].Text);
            
            
             
