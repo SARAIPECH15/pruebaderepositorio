@@ -13,5 +13,31 @@ namespace ProyectoWebPageMaster.GUI
 		{
 
 		}
+
+		protected string recuperardatos()
+		{
+
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 }
