@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearCapitulo.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.CrearCapitulo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearCapitulo.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.CrearCapitulo"  %>
 
 <!DOCTYPE html>
 
@@ -14,6 +14,16 @@
     <script src="../recursos/js/jquery.richtext.js"></script>
     <link href="../recursos/css/site.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <script src="../recursos/js/ckeditor.js"></script>
+    <script>
+         $(document).ready(function () {
+             $('#txtAreacapitulo').richText();
+         });
+                    </script>
+    
+  
+
 
 </head>
 <body>
@@ -34,7 +44,7 @@
                 </div>
                 <div class="col-md-10 nav justify-content-end">
                     <br /><br />
-                    <asp:Button ID="Button1" runat="server" Text="Guardar" CssClass="btn btn-info" />&nbsp
+                    <asp:Button ID="btnguardar" runat="server" Text="Guardar" CssClass="btn btn-info" OnClick="btnguardar_Click" />&nbsp
                      <asp:Button ID="btnPublicar" runat="server" Text="Publicar" CssClass="btn btn-warning" data-toggle="modal" data-target="#modalLoginForm" />
                 </div>
             </div>
@@ -44,8 +54,9 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6 text-center">
                    
-                    <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Ingrese nombre del Capítulo"></asp:TextBox>
-
+                    <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server" placeholder="Ingrese nombre del Capítulo"></asp:TextBox>
+                    <br />
+                     <asp:TextBox ID="txtNumeroCap" CssClass="form-control" runat="server" placeholder="Ingrese numero del Capítulo"></asp:TextBox>
 
                 </div>
                 <div class="col-md-3"></div>
@@ -56,19 +67,15 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <br /><br />
-                    <textarea id="txtAreacapitulo" cols="20" rows="2"></textarea>
-                    <script>
-                   $(document).ready(function() {
-                     $('#txtAreacapitulo').richText();
-                     });
-                    </script>
+                 
+                    <textarea id="txtAreacapitulo" cols="20" rows="2" name="txtAreacapitulo" runat="server"> jjjjj</textarea>
 
+                    
                 </div>
                 <div class="col-md-2"></div>
 
 
-
+               
             </div>
         </div>
         

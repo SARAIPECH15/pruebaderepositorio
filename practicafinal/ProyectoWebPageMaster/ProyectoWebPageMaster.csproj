@@ -113,6 +113,7 @@
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
     <Content Include="GUI\tiposdeusuariosABCnew.aspx" />
     <Content Include="GUI\UsuariosABC.aspx" />
+    <Content Include="GUI\Estadistica_Admin.aspx" />
     <Content Include="images3\bg-01.jpg" />
     <Content Include="images3\icons\favicon.ico" />
     <Content Include="images3\icons\icon-google.png" />
@@ -196,6 +197,7 @@
     <Content Include="recursos\img\Ciencia_Ficcion_Libro\descarga.jpg" />
     <Content Include="recursos\img\comment\comment-1.png" />
     <Content Include="recursos\img\comment\comment-2.png" />
+    <Content Include="recursos\img\ellibrodelavida.jpg" />
     <Content Include="recursos\img\Espiritual_liro\alucinaciones-reales-terence-mckenna.jpg" />
     <Content Include="recursos\img\Espiritual_liro\aprendiza-bruja-wallace.jpg" />
     <Content Include="recursos\img\Espiritual_liro\camino-corazon-jack-kornfield.jpg" />
@@ -240,6 +242,7 @@
     <Content Include="recursos\img\iphone4.png" />
     <Content Include="recursos\img\leyendo.png" />
     <Content Include="recursos\img\librohd.jpg" />
+    <Content Include="recursos\img\librorosa.jpg" />
     <Content Include="recursos\img\Libro_Aventura\dificil-de-doblegar.jpg" />
     <Content Include="recursos\img\Libro_Aventura\los-nietos-de-dios.jpg" />
     <Content Include="recursos\img\Libro_Aventura\mareas-del-tiempo.jpg" />
@@ -307,6 +310,7 @@
     <Content Include="recursos\js\bootstrap.js" />
     <Content Include="recursos\js\bootstrap.min.js" />
     <Content Include="recursos\js\circle-active.js" />
+    <Content Include="recursos\js\ckeditor.js" />
     <Content Include="recursos\js\contact.js" />
     <Content Include="recursos\js\custom.js" />
     <Content Include="recursos\js\gmaps.min.js" />
@@ -2053,6 +2057,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BO\CapituloBO.cs" />
     <Compile Include="BO\CATEGORIA_BO.cs" />
     <Compile Include="BO\estadosBO.cs" />
     <Compile Include="BO\ESTATUS_BO.cs" />
@@ -2063,6 +2068,7 @@
     <Compile Include="BO\registro_boo.cs" />
     <Compile Include="BO\tipousuariosBO.cs" />
     <Compile Include="BO\UsuariosBO.cs" />
+    <Compile Include="DAO\CapituloDAO.cs" />
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\crearhistorias_DAO.cs" />
@@ -2304,6 +2310,13 @@
     </Compile>
     <Compile Include="GUI\UsuariosABC.aspx.designer.cs">
       <DependentUpon>UsuariosABC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estadistica_Admin.aspx.cs">
+      <DependentUpon>Estadistica_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Estadistica_Admin.aspx.designer.cs">
+      <DependentUpon>Estadistica_Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\administrador.Master.cs">
       <DependentUpon>administrador.Master</DependentUpon>

@@ -1,15 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Site1.Master" AutoEventWireup="true" CodeBehind="perfil.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.perfil" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+
+    <link href="../recursos/css/estilosCapitulo.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     
-    <div class="col-md-12 colorform">
+    <div class="col-md-12 container-login100" style="background-image: url('../recursos/img/ellibrodelavida.jpg');">
         
-            <br /><br /><br /><br />
+            <br /><br />
+        <div class="container-fluid">
             	<div class="row">
 	         <div class="col-md-5"></div>
-             <div class="col-md-2">
+             <div class="col-md-2 text-center" >
 
                    <!-- normal -->
     <div class="ih-item circle effect1"><a href="#">
@@ -28,7 +33,7 @@
                
              </div>
              <div class="col-md-5"></div>
-                    </div>
+                    </div></div>
 
 	</div>
     <br />
