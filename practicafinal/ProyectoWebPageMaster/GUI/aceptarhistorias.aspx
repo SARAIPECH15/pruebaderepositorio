@@ -54,7 +54,7 @@
 <ItemTemplate>
 
 <div  class="ImageContainer hvr-underline-from-center hvr-shadow" style="cursor:default;">
-	<asp:Image ID="ImgPhoto" runat="server" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS")+"_"+Eval("FOTO")%>' width="250px" heigth="150px" class="img-thumbnail"/>
+	<asp:Image ID="ImgPhoto" runat="server" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS")+Eval("FOTO")%>' width="250px" heigth="150px" class="img-thumbnail"/>
 <div class="caption contenedorlistview">
 	
 		

@@ -47,9 +47,9 @@ namespace ProyectoWebPageMaster.GUI
 
 
 			objdao.busca_datosdehistoria(objhis);
-				string ruta = "~/recursos/fotos_portadasLibros/" + objhis.Codig_his +objhis.Foto;
-			      Image1.ImageUrl = ruta;
-				txtTitulo.Text = objhis.Nombre;
+			string ruta = "~/recursos/fotos_portadasLibros/" + objhis.Codig_his +objhis.Foto;
+			Image1.ImageUrl = ruta;
+		    txtTitulo.Text = objhis.Nombre;
 			txtprologo.Value = objhis.Prologo;
 			TXT_ID.Text = objhis.Codig_his.ToString();
 			TXT_AUTOR.Text = objhis.Idautor.ToString();

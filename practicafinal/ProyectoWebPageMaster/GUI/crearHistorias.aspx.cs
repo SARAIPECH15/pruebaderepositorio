@@ -187,6 +187,14 @@ namespace ProyectoWebPageMaster.GUI
                 }
                 
             }
+
+
+            int codigohis;
+            codigohis = objhistoriabo.Codig_his;
+
+            Response.Redirect("../GUI/CrearCapitulo.aspx?id=" + codigohis);
+
+
         }
     }
 }

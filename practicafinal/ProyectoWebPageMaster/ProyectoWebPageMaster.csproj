@@ -94,6 +94,7 @@
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
     <Content Include="GUI\detalles.aspx" />
+    <Content Include="GUI\EditarPerfil.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
@@ -182,6 +183,7 @@
     <Content Include="recursos\css\custom.css" />
     <Content Include="recursos\css\font-awesome.css" />
     <Content Include="recursos\Estilos_Login.css" />
+    <Content Include="recursos\Estilos_MISHISTORIAS.css" />
     <Content Include="recursos\fonts2\glyphicons-halflings-regular.svg" />
     <Content Include="recursos\fonts2\Material-Design-Iconic-Font.svg" />
     <Content Include="recursos\fonts2\robotocondensed-light.svg" />
@@ -205,6 +207,7 @@
     <Content Include="recursos\img\Ciencia_Ficcion_Libro\descarga.jpg" />
     <Content Include="recursos\img\comment\comment-1.png" />
     <Content Include="recursos\img\comment\comment-2.png" />
+    <Content Include="recursos\img\ellibrodelavida.jpg" />
     <Content Include="recursos\img\Espiritual_liro\alucinaciones-reales-terence-mckenna.jpg" />
     <Content Include="recursos\img\Espiritual_liro\aprendiza-bruja-wallace.jpg" />
     <Content Include="recursos\img\Espiritual_liro\camino-corazon-jack-kornfield.jpg" />
@@ -2062,6 +2065,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BO\CapituloBO.cs" />
     <Compile Include="BO\CATEGORIA_BO.cs" />
     <Compile Include="BO\ESTADISTICA_BO.cs" />
     <Compile Include="BO\estadosBO.cs" />
@@ -2073,6 +2077,7 @@
     <Compile Include="BO\registro_boo.cs" />
     <Compile Include="BO\tipousuariosBO.cs" />
     <Compile Include="BO\UsuariosBO.cs" />
+    <Compile Include="DAO\CapituloDAO.cs" />
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\crearhistorias_DAO.cs" />
@@ -2175,6 +2180,13 @@
     </Compile>
     <Compile Include="GUI\detalles.aspx.designer.cs">
       <DependentUpon>detalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\estadosABCnew.aspx.cs">
       <DependentUpon>estadosABCnew.aspx</DependentUpon>

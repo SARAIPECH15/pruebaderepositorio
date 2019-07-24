@@ -17,7 +17,7 @@
 
            <div class="card" style="width: 18rem; height:30rem; ">
           
-               <asp:Image ID="Image1" runat="server" src="../recursos/img/sinimagen.png" Height="360px" Width="286px"/><br />
+               <asp:Image ID="Image1" runat="server"  Height="360px" Width="286px"/><br />
              <div class="card-body">
               <br /><br />
                  
