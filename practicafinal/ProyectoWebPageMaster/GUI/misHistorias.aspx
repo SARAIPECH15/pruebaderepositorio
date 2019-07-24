@@ -17,7 +17,7 @@
 
     
 
-
+    <div class="container-fluid">
 
     <div class="row">
 
@@ -28,8 +28,8 @@
     <div class="col-md-8">      
         
         <div class="row">
-           <div class="col-md-6">            
-             <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lstfotos" PageSize="3">
+          <div class="col-md-6">            
+             <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lstfotos" PageSize="6" OnPreRender="DataPager1_PreRender">
              <Fields>
                    <asp:NextPreviousPagerField ButtonType="Button"
                                                 ShowFirstPageButton="True" 
@@ -44,9 +44,9 @@
                                                 ButtonCssClass="btn btn-sm btn-default"/>
              </Fields>
          </asp:DataPager>
-           </div>
+           </div> 
        </div>
- <!--   <div class="col-md-8">--->
+ <!--   <div class="col-md-8">
 
 
       <!---  <div class="card">
@@ -76,7 +76,7 @@
         <div class="col-md-2"></div>
     </div>
         </div>
- 
+ </div>
 
 
     <br /><br />

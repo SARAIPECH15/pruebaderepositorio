@@ -9,6 +9,7 @@ using ProyectoWebPageMaster.BO;
 using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Data;
 
 namespace ProyectoWebPageMaster.GUI
 {
@@ -28,32 +29,34 @@ namespace ProyectoWebPageMaster.GUI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["ID_US"] == null)
-            {
-                Response.Redirect("../GUI/1.aspx");
-
-            }
-            else
-            {
-                objbo2.Id = Convert.ToInt32(Session["ID_US"]);
-                objdao2.busca_usuario(objbo2);
-                string ruta = "~/recursos/fotos_usuarios/" + objbo2.Id + objbo2.Fotoperfil;
-                //ruta = HttpUtility.HtmlDecode;
-                imgperfilusuario.ImageUrl = ruta;
-                txt_nombre.Text = objbo2.Nombre;
-                txt_Apellidos.Text = objbo2.Apeliido;
-                txt_Direccion.Text = objbo2.Direccion;
-                Txt_email.Text = objbo2.Email;
-                txt_password.Text = objbo2.Comtrasena;
-                txt_Usuario.Text = objbo2.Usuario;
-                txtFoto_usuario.Text = objbo2.Fotoperfil;
-                // DropDownEstado.Text = objbo2.Cod_ciu;
-                // DropDownPais.Text = objbo2.Cod_pais;
-            }
+           
 
             if (!IsPostBack)
             {
                 llenadoDropDownPais();
+                if (Session["ID_US"] == null)
+                {
+                    Response.Redirect("../GUI/1.aspx");
+
+                }
+                else
+                {
+                    objbo2.Id = Convert.ToInt32(Session["ID_US"]);
+                     objdao2.busca_usuario(objbo2);
+
+                    string ruta = "~/recursos/fotos_usuarios/" + objbo2.Id + objbo2.Fotoperfil;
+                    //ruta = HttpUtility.HtmlDecode;
+                    imgperfilusuario.ImageUrl = ruta;
+                    txt_nombre.Text = objbo2.Nombre;
+                    txt_Apellidos.Text = objbo2.Apeliido;
+                    txt_Direccion.Text = objbo2.Direccion;
+                    Txt_email.Text = objbo2.Email;
+                    txt_password.Text = objbo2.Comtrasena;
+                    txt_Usuario.Text = objbo2.Usuario;
+                    txtFoto_usuario.Text = objbo2.Fotoperfil;
+                    // DropDownEstado.Text = objbo2.Cod_ciu;
+                    // DropDownPais.Text = objbo2.Cod_pais;
+                }
             }
 
         }

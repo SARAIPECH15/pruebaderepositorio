@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearCapitulo.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.CrearCapitulo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearCapitulo.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.CrearCapitulo" EnableEventValidation="false" ValidateRequest="false" %>
 
 <!DOCTYPE html>
 

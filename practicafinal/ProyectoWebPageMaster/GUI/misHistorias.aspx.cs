@@ -33,10 +33,9 @@ namespace ProyectoWebPageMaster.GUI
             lstfotos.DataBind();
         }
 
-
-
-
-
-
+        protected void DataPager1_PreRender(object sender, EventArgs e)
+        {
+            cargar_imagenes();
+        }
     }
 }

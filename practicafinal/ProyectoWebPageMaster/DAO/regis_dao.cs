@@ -60,7 +60,7 @@ namespace ProyectoWebPageMaster.DAO
 			objbo.Fotoperfil = datos.Tables[0].Rows[0]["FOTO"].ToString();
             objbo.Direccion = datos.Tables[0].Rows[0]["DIRECCION"].ToString();
             objbo.Apeliido = datos.Tables[0].Rows[0]["APELLIDO"].ToString();
-
+           // return datos;
         }
 
 
@@ -101,7 +101,8 @@ namespace ProyectoWebPageMaster.DAO
 
         public int modificarusuario2(registro_boo objusuario)
         {
-            int id = objConectar.EjecutarComando(string.Format("update USUARIO set NOMBRE='{0}',Email='{1}',USUARIO='{2}',CONTRASENIA='{3}',FOTO='{4}',APELLIDO='{5}',DIRECCION='{6}',COD_PAIS={7},COD_CIU={8} where ID_US={9}", objusuario.Nombre, objusuario.Email, objusuario.Usuario, objusuario.Comtrasena, objusuario.Fotoperfil, objusuario.Apeliido, objusuario.Direccion, objusuario.Cod_pais, objusuario.Cod_ciu, objusuario.Id));
+            string sen = string.Format("update USUARIO set NOMBRE='{0}',Email='{1}',USUARIO='{2}',CONTRASENIA='{3}',FOTO='{4}',APELLIDO='{5}',DIRECCION='{6}',COD_PAIS={7},COD_CIU={8} where ID_US={9}", objusuario.Nombre, objusuario.Email, objusuario.Usuario, objusuario.Comtrasena, objusuario.Fotoperfil, objusuario.Apeliido, objusuario.Direccion, objusuario.Cod_pais, objusuario.Cod_ciu, objusuario.Id);
+            int id = objConectar.EjecutarComando(sen);
             return 1;
         }
 
