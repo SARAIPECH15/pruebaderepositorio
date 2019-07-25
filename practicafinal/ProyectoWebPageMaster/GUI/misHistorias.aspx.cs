@@ -37,5 +37,10 @@ namespace ProyectoWebPageMaster.GUI
         {
             cargar_imagenes();
         }
+
+        protected void lstfotos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

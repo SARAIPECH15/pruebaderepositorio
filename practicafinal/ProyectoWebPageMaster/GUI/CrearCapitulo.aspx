@@ -44,7 +44,7 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6 text-center">
                    
-                    <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server" placeholder="Ingrese nombre del Capítulo"></asp:TextBox>
+                    <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server" placeholder="Ingrese nombre del Capítulo"></asp:TextBox><br />
                     <asp:TextBox ID="txtNumeroCap" CssClass="form-control" runat="server" placeholder="Ingrese numero del Capítulo"></asp:TextBox>
 
                 </div>
