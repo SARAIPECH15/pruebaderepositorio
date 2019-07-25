@@ -103,6 +103,7 @@
     <Content Include="GUI\Fantasia.aspx" />
     <Content Include="GUI\GenerosABC.aspx" />
     <Content Include="GUI\historias.aspx" />
+    <Content Include="GUI\HISTORIASPARAUSUARIOS.aspx" />
     <Content Include="GUI\home.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
@@ -2086,6 +2087,7 @@
     <Compile Include="BO\UsuariosBO.cs" />
     <Compile Include="DAO\CapituloDAO.cs" />
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
+    <Compile Include="DAO\Class1.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\crearhistorias_DAO.cs" />
     <Compile Include="DAO\Estadistica_DAO.cs" />
@@ -2250,6 +2252,13 @@
     </Compile>
     <Compile Include="GUI\historias.aspx.designer.cs">
       <DependentUpon>historias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HISTORIASPARAUSUARIOS.aspx.cs">
+      <DependentUpon>HISTORIASPARAUSUARIOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HISTORIASPARAUSUARIOS.aspx.designer.cs">
+      <DependentUpon>HISTORIASPARAUSUARIOS.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
