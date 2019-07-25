@@ -19,7 +19,7 @@ namespace ProyectoWebPageMaster.GUI {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_nombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_nombre;
         
         /// <summary>
         /// Control txt_Apellidos.
@@ -28,7 +28,7 @@ namespace ProyectoWebPageMaster.GUI {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Apellidos;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Apellidos;
         
         /// <summary>
         /// Control txt_Usuario.
@@ -37,7 +37,7 @@ namespace ProyectoWebPageMaster.GUI {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Usuario;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Usuario;
         
         /// <summary>
         /// Control Txt_email.
@@ -46,7 +46,7 @@ namespace ProyectoWebPageMaster.GUI {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_email;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Txt_email;
         
         /// <summary>
         /// Control DropDownPais.
@@ -73,7 +73,7 @@ namespace ProyectoWebPageMaster.GUI {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Direccion;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Direccion;
         
         /// <summary>
         /// Control txt_password.
@@ -82,7 +82,7 @@ namespace ProyectoWebPageMaster.GUI {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_password;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txt_password;
         
         /// <summary>
         /// Control Fu_perfil.
