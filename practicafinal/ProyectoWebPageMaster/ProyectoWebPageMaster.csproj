@@ -93,6 +93,8 @@
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
     <Content Include="GUI\detalles.aspx" />
+    <Content Include="GUI\EditarCapitulo.aspx" />
+    <Content Include="GUI\EditarHistoria.aspx" />
     <Content Include="GUI\EditarPerfil.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
@@ -103,6 +105,7 @@
     <Content Include="GUI\home.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
+    <Content Include="GUI\misCapitulos.aspx" />
     <Content Include="GUI\misHistorias.aspx" />
     <Content Include="GUI\pais.aspx" />
     <Content Include="GUI\paisABC.aspx" />
@@ -190,6 +193,7 @@
     <Content Include="recursos\img\blog\blog-2.jpg" />
     <Content Include="recursos\img\blog\blog-3.jpg" />
     <Content Include="recursos\img\blog\blog-author.png" />
+    <Content Include="recursos\img\cartoonhappy.png" />
     <Content Include="recursos\img\Chik-Lit\51FTCJ7ssXL.jpg" />
     <Content Include="recursos\img\Chik-Lit\91oqdxcmIvL.jpg" />
     <Content Include="recursos\img\Chik-Lit\9788401353437.jpg" />
@@ -198,6 +202,8 @@
     <Content Include="recursos\img\Ciencia_Ficcion_Libro\descarga.jpg" />
     <Content Include="recursos\img\comment\comment-1.png" />
     <Content Include="recursos\img\comment\comment-2.png" />
+    <Content Include="recursos\img\edit.png" />
+    <Content Include="recursos\img\editcap.png" />
     <Content Include="recursos\img\ellibrodelavida.jpg" />
     <Content Include="recursos\img\Espiritual_liro\alucinaciones-reales-terence-mckenna.jpg" />
     <Content Include="recursos\img\Espiritual_liro\aprendiza-bruja-wallace.jpg" />
@@ -268,6 +274,7 @@
     <Content Include="recursos\img\Paranormal\la-casa-infernal_opt.jpg" />
     <Content Include="recursos\img\Paranormal\la-maldicion-de-hill-house_opt.jpg" />
     <Content Include="recursos\img\Paranormal\zona-muerta-stephen-king-terror.jpg" />
+    <Content Include="recursos\img\plus.png" />
     <Content Include="recursos\img\Poesia_Libros\antologia-poetica-borges-300x476.jpg" />
     <Content Include="recursos\img\Poesia_Libros\rimas-y-leyendas-gustavo-adolfo-bequer-300x457.jpg" />
     <Content Include="recursos\img\Poesia_Libros\ruben-dario-poesias-completas-300x300.jpg" />
@@ -2170,6 +2177,20 @@
     <Compile Include="GUI\detalles.aspx.designer.cs">
       <DependentUpon>detalles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\EditarCapitulo.aspx.cs">
+      <DependentUpon>EditarCapitulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditarCapitulo.aspx.designer.cs">
+      <DependentUpon>EditarCapitulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditarHistoria.aspx.cs">
+      <DependentUpon>EditarHistoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditarHistoria.aspx.designer.cs">
+      <DependentUpon>EditarHistoria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\EditarPerfil.aspx.cs">
       <DependentUpon>EditarPerfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2239,6 +2260,13 @@
     </Compile>
     <Compile Include="GUI\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\misCapitulos.aspx.cs">
+      <DependentUpon>misCapitulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\misCapitulos.aspx.designer.cs">
+      <DependentUpon>misCapitulos.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\misHistorias.aspx.cs">
       <DependentUpon>misHistorias.aspx</DependentUpon>

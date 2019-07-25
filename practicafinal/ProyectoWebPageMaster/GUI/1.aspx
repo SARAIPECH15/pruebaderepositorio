@@ -75,7 +75,7 @@
 						<img src="../images3/icons/icon-google.png" alt="GOOGLE">
 					</a>
 				</div>
-
+                
 				<div class="text-center">
 					<a href="#" class="txt2 hov1">
 						Sign Up

@@ -39,6 +39,14 @@ namespace ProyectoWebPageMaster.GUI
         {
             llenarbo();
             objcapbo.Codigo_cap = objcapdao.agregarCapitulo(objcapbo);
+
+            string scriptjs = @"<script type='text/javascript'>
+                            $.alert({
+               title: 'Alert!',
+                content: 'Felicidades! Tu historia fue creada!',
+                });
+                        </script>";
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", scriptjs, false);
         }
     }
 }

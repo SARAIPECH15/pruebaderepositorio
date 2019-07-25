@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearCapitulo.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.CrearCapitulo" EnableEventValidation="false" ValidateRequest="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditarCapitulo.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.EditarCapitulo" %>
 
 <!DOCTYPE html>
 
@@ -18,7 +18,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid">
+       
+
+         <div class="container-fluid">
             <br />
             <div class="row ">
                 <br />
@@ -94,6 +96,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 
 
