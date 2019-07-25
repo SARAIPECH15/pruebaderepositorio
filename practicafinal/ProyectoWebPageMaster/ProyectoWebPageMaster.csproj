@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -117,6 +118,8 @@
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
     <Content Include="GUI\tiposdeusuariosABCnew.aspx" />
     <Content Include="GUI\UsuariosABC.aspx" />
+    <Content Include="GUI\WebForm1.aspx" />
+    <Content Include="GUI\WebForm2.aspx" />
     <Content Include="images3\bg-01.jpg" />
     <Content Include="images3\icons\favicon.ico" />
     <Content Include="images3\icons\icon-google.png" />
@@ -143,6 +146,12 @@
     <Content Include="recursos\assets\icons\mCSB_buttons.png" />
     <Content Include="recursos\assets\img\login.jpg" />
     <Content Include="recursos\assets\img\sideBar.png" />
+    <Content Include="recursos\charts\Chart.bundle.js" />
+    <Content Include="recursos\charts\Chart.bundle.min.js" />
+    <Content Include="recursos\charts\Chart.css" />
+    <Content Include="recursos\charts\Chart.js" />
+    <Content Include="recursos\charts\Chart.min.css" />
+    <Content Include="recursos\charts\Chart.min.js" />
     <Content Include="recursos\css2\bootstrap-material-design.min.css" />
     <Content Include="recursos\css2\bootstrap.min.css" />
     <Content Include="recursos\css2\jquery.mCustomScrollbar.css" />
@@ -2065,6 +2074,7 @@
   <ItemGroup>
     <Compile Include="BO\CapituloBO.cs" />
     <Compile Include="BO\CATEGORIA_BO.cs" />
+    <Compile Include="BO\ESTADISTICA_BO.cs" />
     <Compile Include="BO\estadosBO.cs" />
     <Compile Include="BO\ESTATUS_BO.cs" />
     <Compile Include="BO\GENERO_BO.cs" />
@@ -2078,6 +2088,7 @@
     <Compile Include="DAO\CATEGORIA_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\crearhistorias_DAO.cs" />
+    <Compile Include="DAO\Estadistica_DAO.cs" />
     <Compile Include="DAO\estadosDAO.cs" />
     <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
@@ -2344,6 +2355,20 @@
     </Compile>
     <Compile Include="GUI\UsuariosABC.aspx.designer.cs">
       <DependentUpon>UsuariosABC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\administrador.Master.cs">
       <DependentUpon>administrador.Master</DependentUpon>

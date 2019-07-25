@@ -22,13 +22,12 @@
 	<link rel="stylesheet" type="text/css" href="../css3/util.css">
 	<link rel="stylesheet" type="text/css" href="../css3/main.css">
     
-
-
-
-
-
-
-
+    <!---GOOGLE LOGIN--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <meta name = "google-signin-client_id" content = "759442328816-ffngqk2blgp5ji067ugntmbrigdo20va.apps.googleusercontent.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+   <!-- <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>---->
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -67,13 +66,14 @@
 				</div>
 
 				<div class="flex-c p-b-112">
-					<a href="#" class="login100-social-item">
+				<!--	<a href="#" class="login100-social-item">
 						<i class="fa fa-facebook-f"></i>
-					</a>
+					</a>--->
 
-					<a href="#" class="login100-social-item">
-						<img src="../images3/icons/icon-google.png" alt="GOOGLE">
-					</a>
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				</div>
+
+
 				</div>
                 
 				<div class="text-center">
