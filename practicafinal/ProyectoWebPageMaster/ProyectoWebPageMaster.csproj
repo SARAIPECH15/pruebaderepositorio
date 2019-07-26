@@ -343,6 +343,7 @@
     <Content Include="recursos\js\popper.min.js" />
     <Content Include="recursos\js\smoothscroll.js" />
     <Content Include="recursos\js\theme.js" />
+    <Content Include="recursos\README_LOGO\logo.PNG" />
     <Content Include="recursos\README_LOGO\Read.me Logo.png" />
     <Content Include="recursos\vendors\circle-bar\circle-progress.min.js" />
     <Content Include="recursos\vendors\circle-bar\plugins.js" />

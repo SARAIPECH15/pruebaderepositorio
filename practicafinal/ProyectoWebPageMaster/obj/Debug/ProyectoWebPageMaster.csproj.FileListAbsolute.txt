@@ -558,3 +558,13 @@ C:\Users\lucas\Desktop\PROYECTOFINAL\pruebaderepositorio\practicafinal\ProyectoW
 C:\Users\lucas\Desktop\PROYECTOFINAL\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.csproj.CopyComplete
 C:\Users\lucas\Desktop\PROYECTOFINAL\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.dll
 C:\Users\lucas\Desktop\PROYECTOFINAL\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.pdb
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\bin\ProyectoWebPageMaster.dll.config
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\bin\ProyectoWebPageMaster.dll
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\bin\ProyectoWebPageMaster.pdb
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.csprojAssemblyReference.cache
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.csproj.CopyComplete
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.dll
+C:\Users\lucas\Desktop\PROYECTO\pruebaderepositorio\practicafinal\ProyectoWebPageMaster\obj\Debug\ProyectoWebPageMaster.pdb

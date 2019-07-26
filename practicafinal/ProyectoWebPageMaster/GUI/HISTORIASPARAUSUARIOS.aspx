@@ -7,8 +7,8 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
-                    <h2>Mis Historias</h2>
-                    <p>¡Tus historias escritas!</p>
+                    <h2>Historias</h2>
+                   
                 </div>
             </div>
         </section>
