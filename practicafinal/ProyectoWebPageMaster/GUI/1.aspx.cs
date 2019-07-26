@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ProyectoWebPageMaster.BO;
@@ -9,22 +11,27 @@ using ProyectoWebPageMaster.DAO;
 
 
 
+
 namespace ProyectoWebPageMaster.GUI
 {
 	public partial class _1 : System.Web.UI.Page
 	{
+        public const string FaceBookAppKey = "7fd4b870152fadf393fd576c8f968002";
 
-		UsuariosBO objboLogin = new UsuariosBO();
+        UsuariosBO objboLogin = new UsuariosBO();
 		UsuariosDAO objdaoLogin = new UsuariosDAO();
 		registro_boo objbo2 = new registro_boo();
 		regis_dao objdao2 = new regis_dao();
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+            if (string.IsNullOrEmpty(Request.QueryString["access_token"])) return;
+           /// string json = GetFacebookUserJSON(Request.QueryString["access_token"]);
 			
 
 		}
+
+
 
 		protected void Btn_iniciar2_Click(object sender, EventArgs e)
 		{
@@ -72,9 +79,10 @@ namespace ProyectoWebPageMaster.GUI
                         });
                         </script>";
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", scriptjs, false);
+                Response.Redirect("../GUI/REGISTRO.aspx");
             }
 
-			
+            
 
 
 

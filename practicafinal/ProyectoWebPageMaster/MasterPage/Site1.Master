@@ -120,7 +120,8 @@
          <!--================Header Menu Area =================-->
         <header class="main_menu_area">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><!--<img src="../recursos/README_LOGO/Read.me%20Logo.png"alt="" width="100" height="100">----></a>
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/README_LOGO/logo.PNG" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -137,16 +138,19 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Navegar
                             </a>
+                            
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li class="nav-item"><a class="nav-link" href="../GUI/Romance.aspx">Romance</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../GUI/historias.aspx">Acción</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../GUI/Aventura.aspx">Aventura</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../GUI/Chick-Lit.aspx">Chick-Lit</a></li>
-                                 
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Misterio.aspx">Misterio</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="../GUI/Paranormal.aspx">Paranormal</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../GUI/FanFic_estesi.aspx">FanFic</a></li>
+                                
+                                <li class="nav-item">
+                                    <asp:ListView ID="lstgeneros" runat="server">
+                                        <ItemTemplate>
+                               <a class="nav-link" href="../GUI/HISTORIASPARAUSUARIOS.aspx?idgen=<%# Eval ("CODIGO_GEN") %>"><%# Eval ("NOMBRE") %></a>
+                                            </ItemTemplate>
+                                   </asp:ListView>     </li>
+                             
+                                
                             </ul>
+                                
                         </li>
                           <li class="nav-item dropdown submenu">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

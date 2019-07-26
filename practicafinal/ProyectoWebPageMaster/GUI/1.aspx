@@ -21,18 +21,61 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../css3/util.css">
 	<link rel="stylesheet" type="text/css" href="../css3/main.css">
-    
+ 
+    <!---GOOGLE LOGIN--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <meta name = "google-signin-client_id" content = "759442328816-ffngqk2blgp5ji067ugntmbrigdo20va.apps.googleusercontent.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
 
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            $(".g-signin2").css("display","none");
+        }
 
-
-
-
-
-
+    </script>
+   <!-- <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>---->
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	
+    <script type="text/javascript">
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '891300384569800',
+                status: true,
+                cookie: true,
+                xfbml: true,
+                oauth: true
+            });
+        };
+        (function () {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+
+        function loginByFacebook() {
+            FB.login(function (response) {
+                if (response.authResponse) {
+                    FacebookLoggedIn(response);
+                } else {
+                    alert(response);
+                }
+            }, {scope:'public_profile'});
+        }
+
+        function FacebookLoggedIn(response) {
+            var loc = '../GUI/home.aspx';
+            if (loc.indexOf('?') > -1)
+                window.location = loc + '&authprv=facebook&acccess_token=' + response.authResponse.accessToken;
+            else
+                window.location = loc + '?authprv=facebook&acccess_token=' + response.authResponse.accessToken;
+        }
+
+
+    </script>
 
 
 		<div class="container-login100" style="background-image: url('../recursos/img/librohd.jpg');">
@@ -67,32 +110,36 @@
 				</div>
 
 				<div class="flex-c p-b-112">
-					<a href="#" class="login100-social-item">
+				<!--	<a href="#" class="login100-social-item">
 						<i class="fa fa-facebook-f"></i>
-					</a>
+					</a>--->
 
-					<a href="#" class="login100-social-item">
-						<img src="../images3/icons/icon-google.png" alt="GOOGLE">
-					</a>
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
 				</div>
 
+
+				</div>
+                
 				<div class="text-center">
 					<a href="#" class="txt2 hov1">
 						Sign Up
 					</a>
 				</div>
+            
 			</form>
-
+            
 			
 		</div>
             </div>
+    
 	</div>
+    
 	
 	
 
 	<div id="dropDownSelect1"></div>
 	
-
+   
 
 
 <!--===============================================================================================-->
@@ -110,7 +157,7 @@
 <!--===============================================================================================-->
 	<script src="js3/main.js"></script>
 
-
+    
 
 
 

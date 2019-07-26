@@ -54,18 +54,23 @@
     Todas mis Historias
     </div>--->
 
-         <asp:ListView ID="lstfotos" runat="server" GroupItemCount="1">
+         <asp:ListView ID="lstfotos" runat="server" GroupItemCount="1" OnSelectedIndexChanged="lstfotos_SelectedIndexChanged">
               <ItemTemplate>
 
                 <div class="imagecontainer">                                      
-                            <asp:Image ID="Image1" runat="server" Width="250px" Height="150px" CssClass="card-img" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS") + Eval("FOTO") %>' />        
+                            <asp:Image ID="Image1" runat="server" Width="250px" Height="150px" CssClass="card-img" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS") + Eval("FOTO") %>'/>        
                          <div class="caption contenedorlistview"">
                                       <h3 class="card-title"><%# Eval("NOMBRE") %></h3>  
                                     
                              <br />
                                       <p class="card-text"><%# Eval("PROLOGO") %></p>
                              <br />
-                             <a href="#">Continuar escribiendo</a>
+                             
+                           <a href="EditarHistoria.aspx?id=<%# Eval("CODIG_HIS") %>"><img src="../recursos/img/edit.png"/></a>
+                             &nbsp
+                             <a href="misCapitulos.aspx?id=<%# Eval("CODIG_HIS") %>"><img src="../recursos/img/editcap.png"/></a>
+                              
+                        <!--     <a href="#">Continuar escribiendo</a> -->
                              </div>
                     </div>
                   </ItemTemplate>

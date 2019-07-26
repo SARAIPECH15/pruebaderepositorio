@@ -7,45 +7,45 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoWebPageMaster.MasterPage {
+namespace ProyectoWebPageMaster.GUI {
     
     
-    public partial class Site1 {
+    public partial class misCapitulos {
         
         /// <summary>
-        /// Control head.
+        /// Control Image1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// Control form1.
+        /// Control LinkButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
         
         /// <summary>
-        /// Control lstgeneros.
+        /// Control DataPager1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lstgeneros;
+        protected global::System.Web.UI.WebControls.DataPager DataPager1;
         
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control lstcapitulos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.ListView lstcapitulos;
     }
 }

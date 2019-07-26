@@ -65,11 +65,12 @@ namespace ProyectoWebPageMaster.GUI
 		}
 		public void LimpiarControles()
 		{
-			txt_Apellidos.Text = "";
-			txt_Direccion.Text = "";
-			Txt_email.Text = "";
-			txt_password.Text = "";
-			txt_Usuario.Text = "";
+            txt_nombre.Value = "";
+			txt_Apellidos.Value = "";
+			txt_Direccion.Value = "";
+			Txt_email.Value = "";
+			txt_password.Value= "";
+			txt_Usuario.Value = "";
 			txt_password.Attributes.Add("value", "");
 
 
@@ -79,23 +80,16 @@ namespace ProyectoWebPageMaster.GUI
 		{
 			
 
-			objbo.Nombre=txt_nombre.Text;
-			objbo.Usuario = txt_Usuario.Text;
-			objbo.Email = Txt_email.Text;
-			objbo.Direccion = txt_Direccion.Text;
-			objbo.Comtrasena = txt_password.Text;
-			objbo.Apeliido = txt_Apellidos.Text;
+			objbo.Nombre=txt_nombre.Value;
+			objbo.Usuario = txt_Usuario.Value;
+			objbo.Email = Txt_email.Value;
+			objbo.Direccion = txt_Direccion.Value;
+			objbo.Comtrasena = txt_password.Value;
+			objbo.Apeliido = txt_Apellidos.Value;
 			objbo.Id_tipous = 1;
 
 			objbo.Cod_ciu= Convert.ToInt32(DropDownEstado.SelectedValue);
 			objbo.Cod_pais= Convert.ToInt32(DropDownPais.SelectedValue);
-
-
-
-
-
-
-
 		}
 		private void llenadoDropDownEstado()
 		{
