@@ -1,25 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/administrador2.Master" AutoEventWireup="true" CodeBehind="aceptarhistorias.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.aceptarhistorias" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+	  <link href="../recursos/Estilos_MISHISTORIAS.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
+
 
 
 <br />
 
-<h1>Galeria de Imagenes</h1>
+<center><h1>Historias</h1></center>
 	<!--paginadorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-->
+	<div class=" row">
+	<div class="col-md-2"></div>
 	
+		<div class="col-md-8">
 <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lstfotos"  PageSize="6" OnPreRender="imagenes" >
 <Fields>
-
-<asp:NumericPagerField CurrentPageLabelCssClass="list-group-item active paginador" NumericButtonCssClass="list-group-item active paginador "/>
-
+  <asp:NextPreviousPagerField ButtonType="Button"
+                                                ShowFirstPageButton="True" 
+                                                ShowNextPageButton="False" 
+                                               
+                                                ButtonCssClass="btn btn-sm btn-default"/>
+                    
+                    <asp:NextPreviousPagerField ButtonType="Button"
+                                                ShowLastPageButton="True" 
+                                                ShowPreviousPageButton="False" 
+                                              
+                                                ButtonCssClass="btn btn-sm btn-default"/>
 
 </Fields>
 
@@ -37,7 +44,7 @@
 			</asp:PlaceHolder>
 </LayoutTemplate>
 
-<GroupTemplate>
+	<GroupTemplate>
 			<div>
 
 				<asp:PlaceHolder ID="itemPlaceholder" runat="server">
@@ -53,16 +60,15 @@
 		
 <ItemTemplate>
 
-<div  class="ImageContainer hvr-underline-from-center hvr-shadow" style="cursor:default;">
-	<asp:Image ID="ImgPhoto" runat="server" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS")+Eval("FOTO")%>' width="250px" heigth="150px" class="img-thumbnail"/>
-<div class="caption contenedorlistview">
-	
+<div  class="ImageContainer">
+	<asp:Image ID="Image1" runat="server" ImageUrl='<%#"~/recursos/fotos_portadasLibros/"+Eval("CODIG_HIS")+Eval("FOTO")%>' width="250px" heigth="150px" CssClass="card-img"/>
+ <div class="caption contenedorlistview"">
 		
-		<h3><%# Eval("NOMBRE")%></h3>
-		<p><%# Eval("PROLOGO")%></p>
+		<h3  class="card-title"><%# Eval("NOMBRE")%></h3>
+		<p class="card-text"><%# Eval("PROLOGO")%></p>
 
 
-		<p><a href="detalles.aspx?CODIG_HIS=<%# Eval("CODIG_HIS")%>" class="btn btn-warning" role="button">Ver mas</a>
+		<p><a href="detalles_HIS.aspx?CODIG_HIS=<%# Eval("CODIG_HIS")%>" class="btn btn-warning" role="button">Ver mas</a>
 		</p>
 
 
@@ -90,7 +96,10 @@
 
 
 
+</div>
 
+<div class="col-md-2"></div>
+</div>
 
 
 

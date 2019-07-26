@@ -40,7 +40,7 @@ namespace ProyectoWebPageMaster.MasterPage
 		
 		
 
-		protected void pruebita(object sender, EventArgs e)
+		protected void pruebita2(object sender, EventArgs e)
 		{
 			Session["ID_US"] = null;
 
@@ -53,7 +53,29 @@ namespace ProyectoWebPageMaster.MasterPage
 
 		}
 
-        
+		protected void pruebita_Click(object sender, EventArgs e)
+		{
+			Session["ID_US"] = null;
 
+			if (Session["ID_US"] == null)
+			{
+
+				Response.Redirect("../GUI/login.aspx");
+
+			}
+
+		}
+
+		protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+		{
+			Session["ID_US"] = null;
+
+			if (Session["ID_US"] == null)
+			{
+
+				Response.Redirect("../GUI/login.aspx");
+
+			}
+		}
 	}
 }

@@ -18,9 +18,18 @@ namespace ProyectoWebPageMaster.BO
         private int codigo_cat;
         private int codigo_est;
         private string prologo;
+		private int cod_cap;
+		private string contenido;
+		private int estado_cap;
+		private string nombre_cap;
+		private string numero_cap;
+		private string nombreusu;
 
-        public int Codig_his { get => codig_his; set => codig_his = value; }
-        public string Foto { get => foto; set => foto = value; }
+		private string AA;
+
+		public int Codig_his { get => codig_his; set => codig_his = value; }
+	
+		public string Foto { get => foto; set => foto = value; }
         public int Idautoriza { get => idautoriza; set => idautoriza = value; }
         public int Idautor { get => idautor; set => idautor = value; }
         public DateTime FechaPublico { get => fechaPublico; set => fechaPublico = value; }
@@ -28,8 +37,14 @@ namespace ProyectoWebPageMaster.BO
         public int Codigo_cat { get => codigo_cat; set => codigo_cat = value; }
         public int Codigo_est { get => codigo_est; set => codigo_est = value; }
         public string Prologo { get => prologo; set => prologo = value; }
+		public int Cod_cap { get => cod_cap; set => cod_cap = value; }
+		public string Contenido { get => contenido; set => contenido = value; }
+		public int Estado_cap { get => estado_cap; set => estado_cap = value; }
+		public string Nombre_cap { get => nombre_cap; set => nombre_cap = value; }
+		public string Numero_cap { get => numero_cap; set => numero_cap = value; }
+		public string Nombreusu { get => nombreusu; set => nombreusu = value; }
 
-        public Image RedimencionarImagen(Image Imgoriginal, int Altoimg)
+		public Image RedimencionarImagen(Image Imgoriginal, int Altoimg)
         {
             var Radio = (double)Altoimg / Imgoriginal.Height;//diferencia entre la imagenes
             var NuevoAncho = (int)(Imgoriginal.Width * Radio);

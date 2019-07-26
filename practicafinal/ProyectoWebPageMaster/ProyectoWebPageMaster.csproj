@@ -86,6 +86,7 @@
     <Content Include="GUI\abcestatus.aspx" />
     <Content Include="GUI\abcGenero.aspx" />
     <Content Include="GUI\abcTipousuarios2new.aspx" />
+    <Content Include="GUI\Aceptarcapitulo.aspx" />
     <Content Include="GUI\aceptarhistorias.aspx" />
     <Content Include="GUI\acercaDe.aspx" />
     <Content Include="GUI\Administrador.aspx" />
@@ -93,8 +94,10 @@
     <Content Include="GUI\ClasificacionABC.aspx" />
     <Content Include="GUI\CrearCapitulo.aspx" />
     <Content Include="GUI\crearHistorias.aspx" />
-    <Content Include="GUI\detalles.aspx" />
+    <Content Include="GUI\destalles_cap_GUI.aspx" />
+    <Content Include="GUI\detalles_HIS.aspx" />
     <Content Include="GUI\EditarPerfil.aspx" />
+    <Content Include="GUI\estadisticasusuario.aspx" />
     <Content Include="GUI\estadosABCnew.aspx" />
     <Content Include="GUI\EstatusABC.aspx" />
     <Content Include="GUI\FanFic_estesi.aspx" />
@@ -115,8 +118,9 @@
     <Content Include="GUI\tiposdeusuariosABC.aspx" />
     <Content Include="GUI\tiposdeusuariosABCnew.aspx" />
     <Content Include="GUI\UsuariosABC.aspx" />
-    <Content Include="GUI\WebForm1.aspx" />
+    <Content Include="GUI\GRAFICAS.aspx" />
     <Content Include="GUI\WebForm2.aspx" />
+    <Content Include="GUI\WebForm3.aspx" />
     <Content Include="images3\bg-01.jpg" />
     <Content Include="images3\icons\favicon.ico" />
     <Content Include="images3\icons\icon-google.png" />
@@ -143,6 +147,7 @@
     <Content Include="recursos\assets\icons\mCSB_buttons.png" />
     <Content Include="recursos\assets\img\login.jpg" />
     <Content Include="recursos\assets\img\sideBar.png" />
+    <Content Include="recursos\charlar.png" />
     <Content Include="recursos\charts\Chart.bundle.js" />
     <Content Include="recursos\charts\Chart.bundle.min.js" />
     <Content Include="recursos\charts\Chart.css" />
@@ -182,6 +187,7 @@
     <Content Include="recursos\css\style.css" />
     <Content Include="recursos\css\custom.css" />
     <Content Include="recursos\css\font-awesome.css" />
+    <Content Include="recursos\d7f20f559e.png" />
     <Content Include="recursos\Estilos_Login.css" />
     <Content Include="recursos\Estilos_MISHISTORIAS.css" />
     <Content Include="recursos\fonts2\glyphicons-halflings-regular.svg" />
@@ -190,6 +196,7 @@
     <Content Include="recursos\fonts2\robotocondensed-regular.svg" />
     <Content Include="recursos\fonts\fontawesome-webfont.svg" />
     <Content Include="recursos\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="recursos\images.png" />
     <Content Include="recursos\img\3931.jpg" />
     <Content Include="recursos\img\3d-shap.png" />
     <Content Include="recursos\img\3d-slider-shap.png" />
@@ -335,6 +342,8 @@
     <Content Include="recursos\js\popper.min.js" />
     <Content Include="recursos\js\smoothscroll.js" />
     <Content Include="recursos\js\theme.js" />
+    <Content Include="recursos\ojo-abierto.png" />
+    <Content Include="recursos\pareja.png" />
     <Content Include="recursos\README_LOGO\Read.me Logo.png" />
     <Content Include="recursos\vendors\circle-bar\circle-progress.min.js" />
     <Content Include="recursos\vendors\circle-bar\plugins.js" />
@@ -2085,7 +2094,7 @@
     <Compile Include="DAO\estadosDAO.cs" />
     <Compile Include="DAO\ESTATUS_DAO.cs" />
     <Compile Include="DAO\GENERO_DAO.cs" />
-    <Compile Include="DAO\listview_ACEPTARHIS.cs" />
+    <Compile Include="DAO\listview_ACEPTARHIS_DAO.cs" />
     <Compile Include="DAO\PaisDAO.cs" />
     <Compile Include="DAO\regis_dao.cs" />
     <Compile Include="DAO\tipousuariosDAO.cs" />
@@ -2124,6 +2133,13 @@
     </Compile>
     <Compile Include="GUI\abcTipousuarios2new.aspx.designer.cs">
       <DependentUpon>abcTipousuarios2new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Aceptarcapitulo.aspx.cs">
+      <DependentUpon>Aceptarcapitulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Aceptarcapitulo.aspx.designer.cs">
+      <DependentUpon>Aceptarcapitulo.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\aceptarhistorias.aspx.cs">
       <DependentUpon>aceptarhistorias.aspx</DependentUpon>
@@ -2174,12 +2190,19 @@
     <Compile Include="GUI\crearHistorias.aspx.designer.cs">
       <DependentUpon>crearHistorias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\detalles.aspx.cs">
-      <DependentUpon>detalles.aspx</DependentUpon>
+    <Compile Include="GUI\destalles_cap_GUI.aspx.cs">
+      <DependentUpon>destalles_cap_GUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\detalles.aspx.designer.cs">
-      <DependentUpon>detalles.aspx</DependentUpon>
+    <Compile Include="GUI\destalles_cap_GUI.aspx.designer.cs">
+      <DependentUpon>destalles_cap_GUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\detalles_HIS.aspx.cs">
+      <DependentUpon>detalles_HIS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\detalles_HIS.aspx.designer.cs">
+      <DependentUpon>detalles_HIS.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\EditarPerfil.aspx.cs">
       <DependentUpon>EditarPerfil.aspx</DependentUpon>
@@ -2187,6 +2210,13 @@
     </Compile>
     <Compile Include="GUI\EditarPerfil.aspx.designer.cs">
       <DependentUpon>EditarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\estadisticasusuario.aspx.cs">
+      <DependentUpon>estadisticasusuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\estadisticasusuario.aspx.designer.cs">
+      <DependentUpon>estadisticasusuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\estadosABCnew.aspx.cs">
       <DependentUpon>estadosABCnew.aspx</DependentUpon>
@@ -2328,12 +2358,12 @@
     <Compile Include="GUI\UsuariosABC.aspx.designer.cs">
       <DependentUpon>UsuariosABC.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="GUI\GRAFICAS.aspx.cs">
+      <DependentUpon>GRAFICAS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="GUI\GRAFICAS.aspx.designer.cs">
+      <DependentUpon>GRAFICAS.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
@@ -2341,6 +2371,13 @@
     </Compile>
     <Compile Include="GUI\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\administrador.Master.cs">
       <DependentUpon>administrador.Master</DependentUpon>

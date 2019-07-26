@@ -18,7 +18,7 @@ namespace ProyectoWebPageMaster.GUI
 
 		}
 
-		listview_ACEPTARHIS objdao = new listview_ACEPTARHIS();
+		listview_ACEPTARHIS_DAO objdao = new listview_ACEPTARHIS_DAO();
 		private void cargar_HISTORIAS()
 		{
 
